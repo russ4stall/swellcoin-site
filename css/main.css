@@ -52,8 +52,9 @@ body, html {
   background-image: linear-gradient(to right, rgba(2, 154, 255, 0.8) 0%, rgba(2, 154, 255, 0.8) 100%), url("../img/img_swell2.jpg");
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   height: 70vw;
-  z-index: 80;
-  margin-top: -21.5vw; }
+  margin-top: -24.5vw;
+  padding-top: 24.5vw;
+  z-index: 80; }
 
 .section-4 {
   background-color: #3d3d3d;
@@ -115,9 +116,9 @@ body, html {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 69.28571%, 50% 100%, 0 69.28571%);
     clip-path: polygon(0 0, 100% 0, 100% 69.28571%, 50% 100%, 0 69.28571%); }
   .section-2 {
-    height: 70vw;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 69.28571%, 50% 100%, 0 69.28571%);
-    clip-path: polygon(0 0, 100% 0, 100% 69.28571%, 50% 100%, 0 69.28571%); }
+    height: 75vw;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 71.33333%, 50% 100%, 0 71.33333%);
+    clip-path: polygon(0 0, 100% 0, 100% 71.33333%, 50% 100%, 0 71.33333%); }
   .section-3 {
     height: 70vw; }
   .section-4 {
@@ -163,11 +164,11 @@ body, html {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 57%, 50% 100%, 0 57%);
     clip-path: polygon(0 0, 100% 0, 100% 57%, 50% 100%, 0 57%); }
   .section-2 {
-    height: 40vw;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 46.25%, 50% 100%, 0 46.25%);
-    clip-path: polygon(0 0, 100% 0, 100% 46.25%, 50% 100%, 0 46.25%); }
+    height: 65vw;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 66.92308%, 50% 100%, 0 66.92308%);
+    clip-path: polygon(0 0, 100% 0, 100% 66.92308%, 50% 100%, 0 66.92308%); }
   .section-3 {
-    height: 50vw; }
+    height: 70vw; }
   .section-4 {
     height: 40vw; }
   .section-5 {
@@ -187,11 +188,11 @@ body, html {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 46.25%, 50% 100%, 0 46.25%);
     clip-path: polygon(0 0, 100% 0, 100% 46.25%, 50% 100%, 0 46.25%); }
   .section-2 {
-    height: 40vw;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 46.25%, 50% 100%, 0 46.25%);
-    clip-path: polygon(0 0, 100% 0, 100% 46.25%, 50% 100%, 0 46.25%); }
+    height: 55vw;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 60.90909%, 50% 100%, 0 60.90909%);
+    clip-path: polygon(0 0, 100% 0, 100% 60.90909%, 50% 100%, 0 60.90909%); }
   .section-3 {
-    height: 40vw; }
+    height: 55vw; }
   .section-4 {
     height: 40vw; }
   .section-5 {

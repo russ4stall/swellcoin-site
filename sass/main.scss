@@ -42,6 +42,7 @@ body, html {
     @include chevronSectionDown($section-2-height-xs);
     z-index: 90; 
     margin-top: -#{$chevron-angle}vw;
+    //padding-top: #{$chevron-angle + 3}vw;    
     .content {
         display: flex;
     }
@@ -50,8 +51,9 @@ body, html {
 .section-3 {
     @include backgroundImageOverlay($bgImgUrl2, $overlay-color-blue);    
     height: #{$section-3-height-xs}vw;
+    margin-top: -#{$chevron-angle + 3}vw;
+    padding-top: #{$chevron-angle + 3}vw;  
     z-index: 80;
-    margin-top: -#{$chevron-angle}vw;
 }
 
 .section-4 {
@@ -132,7 +134,7 @@ body, html {
         @include chevronSectionDown($section-2-height-md);
     }
     .section-3 {
-        height: #{$section-1-height-md}vw;
+        height: #{$section-3-height-md}vw;
     }
     .section-4 {
         height: #{$section-4-height-md}vw;
@@ -157,7 +159,7 @@ body, html {
         @include chevronSectionDown($section-2-height-lg);
     }
     .section-3 {
-        height: #{$section-1-height-lg}vw;
+        height: #{$section-3-height-lg}vw;
     }
     .section-4 {
         height: #{$section-4-height-lg}vw;
@@ -182,7 +184,7 @@ body, html {
         @include chevronSectionDown($section-2-height-xl);
     }
     .section-3 {
-        height: #{$section-1-height-xl}vw;
+        height: #{$section-3-height-xl}vw;
     }
     .section-4 {
         height: #{$section-4-height-xl}vw;
