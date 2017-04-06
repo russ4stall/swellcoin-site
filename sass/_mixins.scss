@@ -1,0 +1,41 @@
+// param $url: The background image src url
+@mixin backgroundImageGradient($url) {
+    background-image: -moz-linear-gradient(left, $gradient-left 0%, $gradient-right 100%), url($url); /* FF3.6-15 */
+    background-image: -webkit-linear-gradient(left, $gradient-left 0%,$gradient-right 100%), url($url); /* Chrome10-25,Safari5.1-6 */
+    background-image: linear-gradient(to right, $gradient-left 0%,$gradient-right 100%), url($url); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+@mixin backgroundImageOverlay($url, $overlay-color) {
+    background-image: -moz-linear-gradient(left, $overlay-color 0%, $overlay-color 100%), url($url); /* FF3.6-15 */
+    background-image: -webkit-linear-gradient(left, $overlay-color 0%,$overlay-color 100%), url($url); /* Chrome10-25,Safari5.1-6 */
+    background-image: linear-gradient(to right, $overlay-color 0%,$overlay-color 100%), url($url); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+// param $height: The height of the section in vw
+@mixin section1HeightAndClipPath($height) {
+    height: #{$height}vw;
+    $vertex: ((($height * .01) - $chevron-angle) / ($height * .01)) * 100%;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% $vertex, 50% 100%, 0 $vertex);
+    clip-path: polygon(0 0, 100% 0, 100% $vertex, 50% 100%, 0 $vertex);
+} 
+
+@mixin section3HeightAndClipPath($height) {
+    height: #{$height}vw;
+    $vertex: 100% - ((($height * .01) - $chevron-angle) / ($height * .01)) * 100%;
+    -webkit-clip-path: polygon(0 0, 50% $vertex, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 50% $vertex, 100% 0, 100% 100%, 0 100%);
+}
+
+@mixin section4HeightAndClipPath($height) {
+    height: #{$height}vw;
+    $vertex: ((($height * .01) - $chevron-angle) / ($height * .01)) * 100%;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 50% $vertex, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% $vertex, 0 100%);
+}
+
+@mixin section5HeightAndClipPath($height) {
+    height: #{$height}vw;
+    $vertex: ((($height * .01) - $chevron-angle) / ($height * .01)) * 100%;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 50% $vertex, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% $vertex, 0 100%);
+}

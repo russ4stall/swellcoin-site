@@ -1,0 +1,162 @@
+@import 'variables';
+@import 'mixins';
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.white-text {
+    color: #fff;
+}
+
+.bgimg {
+    position: relative;
+    opacity: 0.8;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-1 {    
+    text-align: center;
+    @include backgroundImageGradient($bgImgUrl1);
+    @include section1HeightAndClipPath($section-1-height-xs);
+    
+    .logo-title {
+        font-size: 10vw;      
+        color: white; 
+    }      
+}
+
+.section-2 {
+    background: white;
+    height: $section-2-height-xs;
+    .content {
+        display: flex;
+    }
+}
+
+.section-3 {
+    @include backgroundImageOverlay($bgImgUrl2, $overlay-color-blue);    
+    @include section3HeightAndClipPath($section-1-height-xs);
+}
+
+.section-4 {
+    background-color: $darkGray;
+    @include section4HeightAndClipPath($section-1-height-xs);
+}
+
+.section-5 {
+    margin-top: -250px;
+    z-index: -1;
+    @include backgroundImageOverlay($bgImgUrl2, $overlay-color-gray);    
+    @include section5HeightAndClipPath($section-1-height-xs);
+}
+
+.section-6 {
+    background: white;
+    height: $section-6-height-xs;
+}
+
+.section-7 {
+    @include backgroundImageGradient($bgImgUrl4);
+    height: $section-6-height-xs;
+}
+
+
+.footer {
+    background-color: $darkGray;
+    height: $footer-height-xs;
+}
+
+.bgimg-3 {
+    //background-image: url("../img/img_parallax3.jpg");
+    @include backgroundImageGradient($bgImgUrl3);
+    height: 500px;
+    
+}
+
+.content {
+    width: 100%;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .section-1 {
+        @include section1HeightAndClipPath($section-1-height-sm);
+    }
+    .section-3 {
+        @include section3HeightAndClipPath($section-1-height-sm);
+    }
+    .section-4 {
+        @include section4HeightAndClipPath($section-1-height-sm);
+    }
+    .section-6 {
+        height: $section-6-height-sm;
+    }
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .section-1 {
+        @include section1HeightAndClipPath($section-1-height-md);
+    }
+    .section-3 {
+        @include section3HeightAndClipPath($section-1-height-md);
+    }
+    .section-4 {
+        @include section4HeightAndClipPath($section-1-height-md);
+    }
+    .section-6 {
+        height: $section-6-height-md;
+    }
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    .section-1 {
+        @include section1HeightAndClipPath($section-1-height-lg);
+    }
+    .section-3 {
+        @include section3HeightAndClipPath($section-1-height-lg);
+    }
+    .section-4 {
+        @include section4HeightAndClipPath($section-1-height-lg);
+    }
+    .section-6 {
+        height: $section-6-height-lg;
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    .section-1 {
+        @include section1HeightAndClipPath($section-1-height-xl);
+    }
+    .section-3 {
+        @include section3HeightAndClipPath($section-1-height-xl);
+    }
+    .section-4 {
+        @include section4HeightAndClipPath($section-1-height-xl);
+    }
+    .section-6 {
+        height: $section-6-height-xl;
+    }
+
+}
+
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg {
+        background-attachment: scroll;
+        
+    }
+}
