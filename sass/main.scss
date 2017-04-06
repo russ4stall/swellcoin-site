@@ -6,6 +6,7 @@ body, html {
   margin: 0;
   font: 400 15px/1.8 "Lato", sans-serif;
   color: #777;
+  background-color: $darkGray;
 }
 
 .white-text {
@@ -14,18 +15,22 @@ body, html {
 
 .bgimg {
     position: relative;
-    opacity: 0.8;
+    //opacity: 0.8;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+.section {
+    position: relative;
+}
+
 .section-1 {    
     text-align: center;
-    @include backgroundImageGradient($bgImgUrl1);
-    @include section1HeightAndClipPath($section-1-height-xs);
-    
+    @include backgroundImageGradient($bgImgUrl1);    
+    @include chevronSectionDown($section-1-height-xs);
+    z-index: 100;
     .logo-title {
         font-size: 10vw;      
         color: white; 
@@ -33,8 +38,10 @@ body, html {
 }
 
 .section-2 {
-    background: white;
-    height: $section-2-height-xs;
+    background: white;    
+    @include chevronSectionDown($section-2-height-xs);
+    z-index: 90; 
+    margin-top: -#{$chevron-angle}vw;
     .content {
         display: flex;
     }
@@ -42,33 +49,37 @@ body, html {
 
 .section-3 {
     @include backgroundImageOverlay($bgImgUrl2, $overlay-color-blue);    
-    @include section3HeightAndClipPath($section-1-height-xs);
+    height: #{$section-3-height-xs}vw;
+    z-index: 80;
+    margin-top: -#{$chevron-angle}vw;
 }
 
 .section-4 {
     background-color: $darkGray;
-    @include section4HeightAndClipPath($section-1-height-xs);
+    height: #{$section-4-height-xs}vw;        
+    z-index: 80;
 }
 
 .section-5 {
-    margin-top: -#{$chevron-angle + 1}vw;
-    z-index: -1;
     @include backgroundImageOverlay($bgImgUrl2, $overlay-color-gray);    
-    @include section5HeightAndClipPath($section-1-height-xs);
+    @include chevronSectionUp($section-5-height-xs);
+    z-index: 90;
+    margin-top: -#{$chevron-angle}vw;
 }
 
 .section-6 {
     background: white;
-    height: $section-6-height-xs;
+    @include chevronSectionUp($section-6-height-xs);
+    z-index: 90;
+    margin-top: -#{$chevron-angle}vw;
 }
 
 .section-7 {
     @include backgroundImageGradient($bgImgUrl4);
-    height: $section-6-height-xs;
+    height: #{$section-7-height-xs}vw;
 }
 
-
-.footer {
+.section-footer {
     background-color: $darkGray;
     height: $footer-height-xs;
 }
@@ -80,7 +91,7 @@ body, html {
     
 }
 
-.content {
+.content { 
     width: 100%;
     max-width: 1200px;
     margin-right: auto;
@@ -90,68 +101,102 @@ body, html {
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
     .section-1 {
-        @include section1HeightAndClipPath($section-1-height-sm);
+        @include chevronSectionDown($section-1-height-sm);
+    }
+    .section-2 {
+        @include chevronSectionDown($section-2-height-sm);
     }
     .section-3 {
-        @include section3HeightAndClipPath($section-1-height-sm);
+        height: #{$section-3-height-sm}vw;
     }
     .section-4 {
-        @include section4HeightAndClipPath($section-1-height-sm);
+        height: #{$section-4-height-sm}vw;
+    }
+    .section-5 {
+        @include chevronSectionUp($section-5-height-sm);
     }
     .section-6 {
-        height: $section-6-height-sm;
+        @include chevronSectionUp($section-6-height-sm);
+    }
+    .section-7 {
+        height: #{$section-7-height-sm}vw;
     }
  }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
     .section-1 {
-        @include section1HeightAndClipPath($section-1-height-md);
+        @include chevronSectionDown($section-1-height-md);
+    }
+    .section-2 {
+        @include chevronSectionDown($section-2-height-md);
     }
     .section-3 {
-        @include section3HeightAndClipPath($section-1-height-md);
+        height: #{$section-1-height-md}vw;
     }
     .section-4 {
-        @include section4HeightAndClipPath($section-1-height-md);
+        height: #{$section-4-height-md}vw;
+    }
+    .section-5 {
+        @include chevronSectionUp($section-5-height-md);
     }
     .section-6 {
-        height: $section-6-height-md;
+        @include chevronSectionUp($section-6-height-md);
+    }
+    .section-7 {
+        height: #{$section-7-height-md}vw;
     }
  }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { 
     .section-1 {
-        @include section1HeightAndClipPath($section-1-height-lg);
+        @include chevronSectionDown($section-1-height-lg);
+    }
+    .section-2 {
+        @include chevronSectionDown($section-2-height-lg);
     }
     .section-3 {
-        @include section3HeightAndClipPath($section-1-height-lg);
+        height: #{$section-1-height-lg}vw;
     }
     .section-4 {
-        @include section4HeightAndClipPath($section-1-height-lg);
+        height: #{$section-4-height-lg}vw;
+    }
+    .section-5 {
+        @include chevronSectionUp($section-5-height-lg);
     }
     .section-6 {
-        height: $section-6-height-lg;
+        @include chevronSectionUp($section-6-height-lg);
     }
-}
+    .section-7 {
+        height: #{$section-7-height-lg}vw;
+    }
+} 
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { 
     .section-1 {
-        @include section1HeightAndClipPath($section-1-height-xl);
+        @include chevronSectionDown($section-1-height-xl);
+    }
+    .section-2 {
+        @include chevronSectionDown($section-2-height-xl);
     }
     .section-3 {
-        @include section3HeightAndClipPath($section-1-height-xl);
+        height: #{$section-1-height-xl}vw;
     }
     .section-4 {
-        @include section4HeightAndClipPath($section-1-height-xl);
+        height: #{$section-4-height-xl}vw;
+    }
+    .section-5 {
+        @include chevronSectionUp($section-5-height-xl);
     }
     .section-6 {
-        height: $section-6-height-xl;
+        @include chevronSectionUp($section-6-height-xl);
     }
-
+    .section-7 {
+        height: #{$section-7-height-xl}vw;
+    }
 }
-
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {

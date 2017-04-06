@@ -12,6 +12,20 @@
 }
 
 // param $height: The height of the section in vw
+@mixin chevronSectionDown($height) {
+    height: #{$height}vw;    
+    $vertex: 100% * (1 - $chevron-angle / $height);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% $vertex, 50% 100%, 0 $vertex);
+    clip-path: polygon(0 0, 100% 0, 100% $vertex, 50% 100%, 0 $vertex);
+}
+
+@mixin chevronSectionUp($height) {
+    height: #{$height}vw;    
+    $vertex: 100% * ($chevron-angle / $height);
+    -webkit-clip-path: polygon(0 $vertex, 50% 0, 100% $vertex, 100% 100%, 0 100%);
+    clip-path: polygon(0 $vertex, 50% 0, 100% $vertex, 100% 100%, 0 100%);
+}
+
 @mixin section1HeightAndClipPath($height) {
     height: #{$height}vw;    
     $vertex: 100% * (1 - $chevron-angle / $height);
