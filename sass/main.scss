@@ -51,7 +51,7 @@ body, html {
 }
 
 .section-5 {
-    margin-top: -250px;
+    margin-top: -#{$chevron-angle + 1}vw;
     z-index: -1;
     @include backgroundImageOverlay($bgImgUrl2, $overlay-color-gray);    
     @include section5HeightAndClipPath($section-1-height-xs);

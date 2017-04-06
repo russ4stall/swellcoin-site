@@ -10,11 +10,12 @@ $bgImgUrl4: "../img/img_swell1.jpg";
 
 $darkGray: #3d3d3d;
 
-$chevron-angle: .215;
+// measured in % 
+$chevron-angle: 21.5;
 
 // will be rendered as vw
 $section-1-height-xs: 70;
-$section-1-height-sm: 70;
+$section-1-height-sm: 70; 
 $section-1-height-md: 70;
 $section-1-height-lg: 50;
 $section-1-height-xl: 40;
