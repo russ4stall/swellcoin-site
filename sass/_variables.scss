@@ -3,12 +3,16 @@ $gradient-right: rgba(2, 154, 255, .8);
 $overlay-color-blue: rgba(2, 154, 255, .8);
 $overlay-color-gray: rgba(35, 35, 35, .8);
 
+$dark-gray: #3d3d3d;
+$white: #fff;
+
+$light-text: white;
+$dark-text: #1e1e1e;
+
 $bgImgUrl1: "../img/img_swell3.jpg";
 $bgImgUrl2: "../img/img_swell2.jpg"; 
 $bgImgUrl3: "../img/img_swell4.jpg";
 $bgImgUrl4: "../img/img_swell1.jpg";
-
-$darkGray: #3d3d3d;
 
 // measured in percent
 $chevron-angle: 21.5; 
@@ -29,9 +33,9 @@ $section-2-height-xl: 55;
 
 $section-3-height-xs: 70;
 $section-3-height-sm: 70;
-$section-3-height-md: 70;
-$section-3-height-lg: 70;
-$section-3-height-xl: 55;
+$section-3-height-md: 50;
+$section-3-height-lg: 50;
+$section-3-height-xl: 40;
 
 $section-4-height-xs: 70;
 $section-4-height-sm: 70;

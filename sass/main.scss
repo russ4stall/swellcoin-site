@@ -6,11 +6,7 @@ body, html {
   margin: 0;
   font: 400 15px/1.8 "Lato", sans-serif;
   color: #777;
-  background-color: $darkGray;
-}
-
-.white-text {
-    color: #fff;
+  background-color: $dark-gray;
 }
 
 .bgimg {
@@ -26,6 +22,34 @@ body, html {
     position: relative;
 }
 
+.section-title {
+    text-align: center;
+    margin-top: 14px;
+    text-transform: uppercase;
+    font-size: 24px;
+    letter-spacing: 8px;
+}
+
+.content { 
+    width: 100%;
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.btn {
+    padding: 10px 10px;
+}
+
+.btn-primary {
+    background-color: $light-text;
+    color: $overlay-color-blue;
+}
+
+.btn-block {
+    display: block;
+}
+
 .section-1 {    
     text-align: center;
     @include backgroundImageGradient($bgImgUrl1);    
@@ -33,18 +57,19 @@ body, html {
     z-index: 100;
     .logo-title {
         font-size: 10vw;      
-        color: white; 
+        color: $light-text; 
     }      
 }
 
 .section-2 {
-    background: white;    
+    background: $white;    
     @include chevronSectionDown($section-2-height-xs);
     z-index: 90; 
     margin-top: -#{$chevron-angle}vw;
     //padding-top: #{$chevron-angle + 3}vw;    
     .content {
         display: flex;
+        color: $dark-text;
     }
 }
 
@@ -54,10 +79,35 @@ body, html {
     margin-top: -#{$chevron-angle + 3}vw;
     padding-top: #{$chevron-angle + 3}vw;  
     z-index: 80;
+    color: $white;
+    .content {
+        color: $light-text;
+        display: flex;
+        justify-content: center;
+        .get-started {        
+            width: 30%;
+            text-align: center;
+            padding: 0 28px;
+            min-height: 200px;
+            border-left: 1px solid $light-text;
+            &:first-child { border-left: none; }           
+            h4 {
+                font-size: 22px;
+                text-transform: uppercase;
+                margin-top: 8px;
+                margin-bottom: 0;
+            }
+            p {
+                margin-top: 0;
+                margin-bottom: 40px;
+                line-height: 20px;
+            }
+        }
+    }
 }
 
 .section-4 {
-    background-color: $darkGray;
+    background-color: $dark-gray;
     height: #{$section-4-height-xs}vw;        
     z-index: 80;
 }
@@ -82,23 +132,10 @@ body, html {
 }
 
 .section-footer {
-    background-color: $darkGray;
+    background-color: $dark-gray;
     height: $footer-height-xs;
 }
 
-.bgimg-3 {
-    //background-image: url("../img/img_parallax3.jpg");
-    @include backgroundImageGradient($bgImgUrl3);
-    height: 500px;
-    
-}
-
-.content { 
-    width: 100%;
-    max-width: 1200px;
-    margin-right: auto;
-    margin-left: auto;
-}
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
@@ -110,6 +147,8 @@ body, html {
     }
     .section-3 {
         height: #{$section-3-height-sm}vw;
+
+        // TODO: stack getting started boxes
     }
     .section-4 {
         height: #{$section-4-height-sm}vw;
