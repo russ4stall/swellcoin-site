@@ -4,8 +4,8 @@
 body, html {
   height: 100%;
   margin: 0;
-  font: 400 15px/1.8 "Lato", sans-serif;
-  color: #777;
+  //font: 400 15px/1.8 "Lato", sans-serif;
+  font-family: 'Raleway', sans-serif;
   background-color: $dark-gray;
 }
 
@@ -24,7 +24,7 @@ body, html {
 
 .section-title {
     text-align: center;
-    margin-top: 14px;
+    //margin-top: px;
     text-transform: uppercase;
     font-size: 24px;
     letter-spacing: 8px;
@@ -38,7 +38,9 @@ body, html {
 }
 
 .btn {
-    padding: 10px 10px;
+    font-size: 22px;
+    padding: 20px 20px;
+    text-decoration: none;
 }
 
 .btn-primary {
@@ -55,10 +57,17 @@ body, html {
     @include backgroundImageGradient($bgImgUrl1);    
     @include chevronSectionDown($section-1-height-xs);
     z-index: 100;
-    .logo-title {
-        font-size: 10vw;      
-        color: $light-text; 
-    }      
+    color: $light-text; 
+    .content {
+        .logo-title {
+            font-size: 13vw;
+            margin: 0;
+            padding-top: 25vw;
+        }
+        .btn {
+            padding: 10px 20px;
+        }
+    }
 }
 
 .section-2 {
@@ -68,39 +77,34 @@ body, html {
     margin-top: -#{$chevron-angle}vw;
     //padding-top: #{$chevron-angle + 3}vw;    
     .content {
-        display: flex;
         color: $dark-text;
     }
 }
 
 .section-3 {
     @include backgroundImageOverlay($bgImgUrl2, $overlay-color-blue);    
-    height: #{$section-3-height-xs}vw;
+    //height: #{$section-3-height-xs}vw;
+    min-height: 1000px;
     margin-top: -#{$chevron-angle + 3}vw;
     padding-top: #{$chevron-angle + 3}vw;  
     z-index: 80;
-    color: $white;
+    color: $light-text;
     .content {
-        color: $light-text;
-        display: flex;
-        justify-content: center;
-        .get-started {        
-            width: 30%;
-            text-align: center;
-            padding: 0 28px;
+        .get-started {
+            //background-color: rgba(35, 35, 35, .5);
+            border: 1px solid $light-text;
+            margin: 20px;
+            padding: 10px;
             min-height: 200px;
-            border-left: 1px solid $light-text;
-            &:first-child { border-left: none; }           
+            text-align: center;
             h4 {
+                    font-size: 24px;
+                    text-transform: uppercase;
+                    margin-top: 8px;
+                    margin-bottom: 0;
+                }
+            p {                                
                 font-size: 22px;
-                text-transform: uppercase;
-                margin-top: 8px;
-                margin-bottom: 0;
-            }
-            p {
-                margin-top: 0;
-                margin-bottom: 40px;
-                line-height: 20px;
             }
         }
     }
@@ -146,9 +150,8 @@ body, html {
         @include chevronSectionDown($section-2-height-sm);
     }
     .section-3 {
-        height: #{$section-3-height-sm}vw;
-
-        // TODO: stack getting started boxes
+        //height: #{$section-3-height-sm}vw;
+        min-height: 860px;
     }
     .section-4 {
         height: #{$section-4-height-sm}vw;
@@ -174,6 +177,33 @@ body, html {
     }
     .section-3 {
         height: #{$section-3-height-md}vw;
+        min-height: 0;
+        .content {
+            display: flex;
+            .get-started {
+                width: 30%;
+                margin: 0;
+                padding: 0 28px;
+                min-height: 200px;
+                border: none;
+                border-left: 1px solid $light-text;
+                &:first-child { border-left: none; }           
+                h4 {
+                    font-size: 22px;
+                    text-transform: uppercase;
+                    margin-top: 8px;
+                    margin-bottom: 0;
+                }
+                p {
+                    display: block;
+                    min-height: 100px;
+                    margin-top: 0;
+                    margin-bottom: 40px;
+                    line-height: 20px;
+                    font-size: 16px;
+                }
+            }
+        }
     }
     .section-4 {
         height: #{$section-4-height-md}vw;

@@ -5,7 +5,7 @@
   "main": "",
   "scripts": {
     "sass": "node-sass sass/main.scss -o css",
-    "watch-sass": "node-sass --watch sass/main.scss -o css",
+    "sasswatch": "node-sass --watch sass/main.scss -o css",
     "postcss": "postcss css/main.css -o css/postcss.css"
   },
   "author": "me",
