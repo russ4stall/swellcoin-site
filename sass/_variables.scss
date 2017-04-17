@@ -1,27 +1,31 @@
-$gradient-left: rgba(34, 173, 0, .8);
-$gradient-right: rgba(93, 175, 226, .8);
-$overlay-color-blue: rgba(93, 175, 226, .8);
-$overlay-color-gray: rgba(35, 35, 35, .8);
-
-$dark-gray: #3d3d3d;
+// Colors
 $white: #fff;
+$dark-gray: #3d3d3d;
+$brand-green: #85c14f; // rgb(133, 193, 79)
+$brand-blue: #459bbc; // rgb(69, 155, 188)
 
 $light-text: white;
 $dark-text: #1e1e1e;
 
-$bgImgUrl1: "../img/img_swell3.jpg";
-$bgImgUrl2: "../img/img_swell2.jpg"; 
-$bgImgUrl3: "../img/img_swell4.jpg";
-$bgImgUrl4: "../img/img_swell1.jpg";
+
+$gradient-left: rgba(133, 193, 79, .9);
+$gradient-right: rgba(69, 155, 188, .9);
+$overlay-color-blue: rgba(69, 155, 188, .9);
+$overlay-color-gray: rgba(35, 35, 35, .9);
+
+$bgImgUrl1: "../img/bg1.jpg"; 
+$bgImgUrl2: "../img/bg2.jpg"; 
+$bgImgUrl3: "../img/bg3.jpg";
+$bgImgUrl4: "../img/bg4.jpg";
 
 // measured in percent
 $chevron-angle: 21.5; 
 
 // Section Heights
 // will be rendered as vw
-$section-1-height-xs: 90;
+$section-1-height-xs: 120;
 $section-1-height-sm: 70; 
-$section-1-height-md: 70;
+$section-1-height-md: 60; 
 $section-1-height-lg: 50;
 $section-1-height-xl: 40;
 
@@ -31,8 +35,8 @@ $section-2-height-md: 70;
 $section-2-height-lg: 65;
 $section-2-height-xl: 55;
 
-$section-3-height-xs: 150;
-$section-3-height-sm: 150;
+$section-3-height-xs: 0; // Not used for mobile
+$section-3-height-sm: 140;
 $section-3-height-md: 50;
 $section-3-height-lg: 50;
 $section-3-height-xl: 40;
@@ -49,7 +53,7 @@ $section-5-height-md: 70;
 $section-5-height-lg: 60;
 $section-5-height-xl: 40;
 
-$section-6-height-xs: 70;
+$section-6-height-xs: 120;
 $section-6-height-sm: 70;
 $section-6-height-md: 70;
 $section-6-height-lg: 70;

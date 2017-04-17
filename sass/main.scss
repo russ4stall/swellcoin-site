@@ -3,9 +3,9 @@
 
 body, html {
   height: 100%;
-  margin: 0;
-  //font: 400 15px/1.8 "Lato", sans-serif;
-  font-family: 'Raleway', sans-serif;
+  margin: 0;  
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
   background-color: $dark-gray;
 }
 
@@ -23,8 +23,7 @@ body, html {
 }
 
 .section-title {
-    text-align: center;
-    //margin-top: px;
+    text-align: center;    
     text-transform: uppercase;
     font-size: 24px;
     letter-spacing: 8px;
@@ -41,15 +40,15 @@ body, html {
     font-size: 22px;
     padding: 20px 20px;
     text-decoration: none;
-}
-
-.btn-primary {
-    background-color: $light-text;
-    color: $overlay-color-blue;
+    background-color: $white;
 }
 
 .btn-block {
     display: block;
+}
+
+.spacer-20 {
+    height: 20px;
 }
 
 .section-1 {    
@@ -59,15 +58,34 @@ body, html {
     z-index: 100;
     color: $light-text; 
     .content {
-        .logo-title {
-            font-size: 13vw;
-            margin: 0;
+        .logo-title {                        
             padding-top: 25vw;
+            width: 85vw;
         }
-        .btn {
-            padding: 10px 20px;
+        p {
+            font-size: 20px;
+            margin-bottom: 16vw; 
+        }
+        .btn {            
+            padding: 10px 40px;      
+            color: #4fa374; 
+            font-size: 22px;            
         }
     }
+    .down-arrow-container {
+        position: absolute;
+        width: 100%;
+        bottom: 20px;
+        .down-arrow {
+            margin-left: auto;
+            margin-right: auto;
+            width: 72px;
+            height: 18px;
+            background-color: white;
+            -webkit-clip-path: polygon(0 0, 50% 88%, 100% 0, 100% 12%, 50% 100%, 0 12%);
+            clip-path: polygon(0 0, 50% 88%, 100% 0, 100% 12%, 50% 100%, 0 12%);
+        }
+    }    
 }
 
 .section-2 {
@@ -82,14 +100,12 @@ body, html {
 }
 
 .section-3 {
-    @include backgroundImageOverlay($bgImgUrl2, $overlay-color-blue);    
-    //height: #{$section-3-height-xs}vw;
-    min-height: 1000px;
+    @include backgroundImageOverlay($bgImgUrl2, $overlay-color-blue);        
     margin-top: -#{$chevron-angle + 3}vw;
     padding-top: #{$chevron-angle + 3}vw;  
     z-index: 80;
     color: $light-text;
-    .content {
+    .content {        
         .get-started {
             //background-color: rgba(35, 35, 35, .5);
             border: 1px solid $light-text;
@@ -106,6 +122,9 @@ body, html {
             p {                                
                 font-size: 22px;
             }
+            .btn {
+                color: $brand-blue;                     
+            }            
         }
     }
 }
@@ -114,6 +133,7 @@ body, html {
     background-color: $dark-gray;
     height: #{$section-4-height-xs}vw;        
     z-index: 80;
+    color: $light-text; 
 }
 
 .section-5 {
@@ -121,6 +141,13 @@ body, html {
     @include chevronSectionUp($section-5-height-xs);
     z-index: 90;
     margin-top: -#{$chevron-angle}vw;
+    .content {        
+        line-height: #{$section-5-height-xs - 5}vw;
+        color: $light-text;
+        text-align: center;
+        font-weight: 600;
+        font-size: 9vw;        
+    }    
 }
 
 .section-6 {
@@ -128,6 +155,13 @@ body, html {
     @include chevronSectionUp($section-6-height-xs);
     z-index: 90;
     margin-top: -#{$chevron-angle}vw;
+    color: $dark-text;
+    .content {
+        padding-top: 8vw;        
+        .section-title {
+            color: $brand-blue;
+        }
+    }
 }
 
 .section-7 {
@@ -176,10 +210,12 @@ body, html {
         @include chevronSectionDown($section-2-height-md);
     }
     .section-3 {
-        height: #{$section-3-height-md}vw;
-        min-height: 0;
+        //height: #{$section-3-height-md}vw;
+        
         .content {
             display: flex;
+            
+
             .get-started {
                 width: 30%;
                 margin: 0;
@@ -187,7 +223,7 @@ body, html {
                 min-height: 200px;
                 border: none;
                 border-left: 1px solid $light-text;
-                &:first-child { border-left: none; }           
+                &:first-child { border-left: none; }
                 h4 {
                     font-size: 22px;
                     text-transform: uppercase;
