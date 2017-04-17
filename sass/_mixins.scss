@@ -22,6 +22,6 @@
 @mixin chevronSectionUp($height) {
     height: #{$height}vw;    
     $vertex: 100% * ($chevron-angle / $height);
-    -webkit-clip-path: polygon(0 $vertex, 50% 0, 100% $vertex, 100% 100%, 0 100%);
-    clip-path: polygon(0 $vertex, 50% 0, 100% $vertex, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 $vertex, 50% 0, 100% $vertex, 100% 100%, 50% 100% - $vertex, 0 100%);
+    clip-path: polygon(0 $vertex, 50% 0, 100% $vertex, 100% 100%, 50% 100% - $vertex, 0 100%);
 }

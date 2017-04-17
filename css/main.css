@@ -126,8 +126,8 @@ body, html {
   background-image: linear-gradient(to right, rgba(35, 35, 35, 0.9) 0%, rgba(35, 35, 35, 0.9) 100%), url("../img/bg2.jpg");
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   height: 70vw;
-  -webkit-clip-path: polygon(0 30.71429%, 50% 0, 100% 30.71429%, 100% 100%, 0 100%);
-  clip-path: polygon(0 30.71429%, 50% 0, 100% 30.71429%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 30.71429%, 50% 0, 100% 30.71429%, 100% 100%, 50% 69.28571%, 0 100%);
+  clip-path: polygon(0 30.71429%, 50% 0, 100% 30.71429%, 100% 100%, 50% 69.28571%, 0 100%);
   z-index: 90;
   margin-top: -21.5vw; }
   .section-5 .content {
@@ -139,16 +139,16 @@ body, html {
 
 .section-6 {
   background: white;
-  height: 120vw;
-  -webkit-clip-path: polygon(0 17.91667%, 50% 0, 100% 17.91667%, 100% 100%, 0 100%);
-  clip-path: polygon(0 17.91667%, 50% 0, 100% 17.91667%, 100% 100%, 0 100%);
-  z-index: 90;
+  z-index: 80;
   margin-top: -21.5vw;
   color: #1e1e1e; }
   .section-6 .content {
-    padding-top: 8vw; }
+    padding-top: 8vw;
+    padding-bottom: 40px; }
     .section-6 .content .section-title {
       color: #459bbc; }
+    .section-6 .content p {
+      padding: 0 20px; }
 
 .section-7 {
   background-image: -moz-linear-gradient(left, rgba(133, 193, 79, 0.9) 0%, rgba(69, 155, 188, 0.9) 100%), url("../img/bg4.jpg");
@@ -157,7 +157,30 @@ body, html {
   /* Chrome10-25,Safari5.1-6 */
   background-image: linear-gradient(to right, rgba(133, 193, 79, 0.9) 0%, rgba(69, 155, 188, 0.9) 100%), url("../img/bg4.jpg");
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  height: 70vw; }
+  height: 500px;
+  color: white;
+  margin-top: -32px; }
+  .section-7 .content .section-title {
+    margin-top: 0;
+    padding-top: 64px; }
+  .section-7 .content form {
+    width: 80%;
+    margin: 0 auto; }
+    .section-7 .content form .form-field {
+      display: block;
+      height: 50px;
+      width: 100%;
+      padding: 10px 20px;
+      margin: 10px 0;
+      box-sizing: border-box; }
+    .section-7 .content form textarea.form-field {
+      height: 100px; }
+    .section-7 .content form button {
+      display: block;
+      width: 100%;
+      color: white;
+      background-color: rgba(255, 255, 255, 0.5);
+      border: none; }
 
 .section-footer {
   background-color: #3d3d3d;
@@ -178,12 +201,12 @@ body, html {
     height: 70vw; }
   .section-5 {
     height: 70vw;
-    -webkit-clip-path: polygon(0 30.71429%, 50% 0, 100% 30.71429%, 100% 100%, 0 100%);
-    clip-path: polygon(0 30.71429%, 50% 0, 100% 30.71429%, 100% 100%, 0 100%); }
+    -webkit-clip-path: polygon(0 30.71429%, 50% 0, 100% 30.71429%, 100% 100%, 50% 69.28571%, 0 100%);
+    clip-path: polygon(0 30.71429%, 50% 0, 100% 30.71429%, 100% 100%, 50% 69.28571%, 0 100%); }
   .section-6 {
     height: 70vw;
-    -webkit-clip-path: polygon(0 30.71429%, 50% 0, 100% 30.71429%, 100% 100%, 0 100%);
-    clip-path: polygon(0 30.71429%, 50% 0, 100% 30.71429%, 100% 100%, 0 100%); }
+    -webkit-clip-path: polygon(0 30.71429%, 50% 0, 100% 30.71429%, 100% 100%, 50% 69.28571%, 0 100%);
+    clip-path: polygon(0 30.71429%, 50% 0, 100% 30.71429%, 100% 100%, 50% 69.28571%, 0 100%); }
   .section-7 {
     height: 40vw; } }
 
@@ -223,12 +246,12 @@ body, html {
     height: 70vw; }
   .section-5 {
     height: 70vw;
-    -webkit-clip-path: polygon(0 30.71429%, 50% 0, 100% 30.71429%, 100% 100%, 0 100%);
-    clip-path: polygon(0 30.71429%, 50% 0, 100% 30.71429%, 100% 100%, 0 100%); }
+    -webkit-clip-path: polygon(0 30.71429%, 50% 0, 100% 30.71429%, 100% 100%, 50% 69.28571%, 0 100%);
+    clip-path: polygon(0 30.71429%, 50% 0, 100% 30.71429%, 100% 100%, 50% 69.28571%, 0 100%); }
   .section-6 {
     height: 70vw;
-    -webkit-clip-path: polygon(0 30.71429%, 50% 0, 100% 30.71429%, 100% 100%, 0 100%);
-    clip-path: polygon(0 30.71429%, 50% 0, 100% 30.71429%, 100% 100%, 0 100%); }
+    -webkit-clip-path: polygon(0 30.71429%, 50% 0, 100% 30.71429%, 100% 100%, 50% 69.28571%, 0 100%);
+    clip-path: polygon(0 30.71429%, 50% 0, 100% 30.71429%, 100% 100%, 50% 69.28571%, 0 100%); }
   .section-7 {
     height: 40vw; } }
 
@@ -247,12 +270,12 @@ body, html {
     height: 40vw; }
   .section-5 {
     height: 60vw;
-    -webkit-clip-path: polygon(0 35.83333%, 50% 0, 100% 35.83333%, 100% 100%, 0 100%);
-    clip-path: polygon(0 35.83333%, 50% 0, 100% 35.83333%, 100% 100%, 0 100%); }
+    -webkit-clip-path: polygon(0 35.83333%, 50% 0, 100% 35.83333%, 100% 100%, 50% 64.16667%, 0 100%);
+    clip-path: polygon(0 35.83333%, 50% 0, 100% 35.83333%, 100% 100%, 50% 64.16667%, 0 100%); }
   .section-6 {
     height: 70vw;
-    -webkit-clip-path: polygon(0 30.71429%, 50% 0, 100% 30.71429%, 100% 100%, 0 100%);
-    clip-path: polygon(0 30.71429%, 50% 0, 100% 30.71429%, 100% 100%, 0 100%); }
+    -webkit-clip-path: polygon(0 30.71429%, 50% 0, 100% 30.71429%, 100% 100%, 50% 69.28571%, 0 100%);
+    clip-path: polygon(0 30.71429%, 50% 0, 100% 30.71429%, 100% 100%, 50% 69.28571%, 0 100%); }
   .section-7 {
     height: 40vw; } }
 
@@ -271,12 +294,12 @@ body, html {
     height: 40vw; }
   .section-5 {
     height: 40vw;
-    -webkit-clip-path: polygon(0 53.75%, 50% 0, 100% 53.75%, 100% 100%, 0 100%);
-    clip-path: polygon(0 53.75%, 50% 0, 100% 53.75%, 100% 100%, 0 100%); }
+    -webkit-clip-path: polygon(0 53.75%, 50% 0, 100% 53.75%, 100% 100%, 50% 46.25%, 0 100%);
+    clip-path: polygon(0 53.75%, 50% 0, 100% 53.75%, 100% 100%, 50% 46.25%, 0 100%); }
   .section-6 {
     height: 40vw;
-    -webkit-clip-path: polygon(0 53.75%, 50% 0, 100% 53.75%, 100% 100%, 0 100%);
-    clip-path: polygon(0 53.75%, 50% 0, 100% 53.75%, 100% 100%, 0 100%); }
+    -webkit-clip-path: polygon(0 53.75%, 50% 0, 100% 53.75%, 100% 100%, 50% 46.25%, 0 100%);
+    clip-path: polygon(0 53.75%, 50% 0, 100% 53.75%, 100% 100%, 50% 46.25%, 0 100%); }
   .section-7 {
     height: 40vw; } }
 

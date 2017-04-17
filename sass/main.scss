@@ -47,6 +47,8 @@ body, html {
     display: block;
 }
 
+
+
 .spacer-20 {
     height: 20px;
 }
@@ -151,22 +153,56 @@ body, html {
 }
 
 .section-6 {
-    background: white;
-    @include chevronSectionUp($section-6-height-xs);
-    z-index: 90;
+    background: white;    
+    z-index: 80;
     margin-top: -#{$chevron-angle}vw;
     color: $dark-text;
     .content {
         padding-top: 8vw;        
+        padding-bottom: 40px;        
         .section-title {
             color: $brand-blue;
+        }
+        p {
+            padding: 0 20px;
         }
     }
 }
 
 .section-7 {
     @include backgroundImageGradient($bgImgUrl4);
-    height: #{$section-7-height-xs}vw;
+    height: 500px;
+    color: $light-text;
+    margin-top: -32px;
+    .content {
+        .section-title {
+            margin-top: 0;
+            padding-top: 64px;
+        }
+        form {
+            width: 80%;
+            margin: 0 auto;
+            .form-field {
+                display: block;
+                height: 50px;
+                width: 100%;
+                padding: 10px 20px;
+                margin: 10px 0;
+                box-sizing: border-box;                
+            }
+            textarea.form-field {
+                height: 100px;
+            }
+            button {
+                display: block;
+                width: 100%;
+                color: $light-text;
+                background-color: rgba(255, 255, 255, .5);
+                border: none;   
+            }
+        }
+    }
+    
 }
 
 .section-footer {
