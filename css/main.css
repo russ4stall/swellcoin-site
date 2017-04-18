@@ -110,7 +110,12 @@ body, html {
     .section-3 .content .get-started p {
       font-size: 22px; }
     .section-3 .content .get-started .btn {
+      border: 2px solid #fff;
+      transition: all 0.3s ease;
       color: #459bbc; }
+      .section-3 .content .get-started .btn:hover {
+        background-color: transparent;
+        color: white; }
 
 .section-4 {
   background-color: #3d3d3d;
@@ -178,9 +183,14 @@ body, html {
     .section-7 .content form button {
       display: block;
       width: 100%;
-      color: white;
+      border: none;
+      transition: all 0.3s ease;
       background-color: rgba(255, 255, 255, 0.5);
-      border: none; }
+      color: white; }
+      .section-7 .content form button:hover {
+        background-color: white;
+        color: #4fa374;
+        cursor: pointer; }
 
 .section-footer {
   background-color: #3d3d3d;
