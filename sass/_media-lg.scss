@@ -1,0 +1,42 @@
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    .section-1 {
+        @include chevronSectionDown($section-1-height-lg);
+        .content {
+            .logo-title {                        
+                padding-top: 10vw;
+                //width: 45vw;
+                width: 480px;
+            }
+            p {
+                margin-bottom: 9vw; 
+            }            
+        }
+    }
+    .section-2 {
+        @include chevronSectionDown($section-2-height-lg);
+    }
+    .section-3 {
+
+     }
+    .section-4 {
+        height: #{$section-4-height-lg}vw;
+    }
+    .section-5 {
+        @include chevronSectionUp($section-5-height-lg);
+        .content {
+            font-size: 80px;
+            line-height: #{$section-5-height-lg - 10}vw;
+        }
+    }
+    .section-6 {
+        .content {
+            .section-title {
+                margin-bottom: 8vw;
+            }
+        }  
+    }
+    .section-7 { 
+
+    }
+} 

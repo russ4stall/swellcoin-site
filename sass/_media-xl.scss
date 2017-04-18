@@ -1,0 +1,27 @@
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    .section-1 {
+        @include chevronSectionDown($section-1-height-xl);
+    }
+    .section-2 {
+        @include chevronSectionDown($section-2-height-xl);
+    }
+    .section-3 {
+
+    }
+    .section-4 {
+        height: #{$section-4-height-xl}vw;
+    }
+    .section-5 {
+        @include chevronSectionUp($section-5-height-xl);
+        .content {            
+            line-height: #{$section-5-height-xl - 13}vw;
+        }
+    }
+    .section-6 {
+
+    }
+    .section-7 {
+
+    }
+}

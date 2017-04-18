@@ -40,14 +40,8 @@ body, html {
     font-size: 22px;
     padding: 20px 20px;
     text-decoration: none;
-    background-color: $white;
+    background-color: $white;    
 }
-
-.btn-block {
-    display: block;
-}
-
-
 
 .spacer-20 {
     height: 20px;
@@ -69,9 +63,15 @@ body, html {
             margin-bottom: 16vw; 
         }
         .btn {            
-            padding: 10px 40px;      
-            color: #4fa374; 
-            font-size: 22px;            
+            padding: 14px 40px;      
+            font-size: 22px;
+            border: 2px solid $white;
+            transition: all 0.3s ease;
+            color: #4fa374;   
+            &:hover {
+                background-color: transparent;
+                color: $white;
+            }      
         }
     }
     .down-arrow-container {
@@ -125,6 +125,7 @@ body, html {
                 font-size: 22px;
             }
             .btn {
+                display: block;
                 border: 2px solid $white;
                 transition: all 0.3s ease;
                 color: $brand-blue;
@@ -186,7 +187,9 @@ body, html {
             padding-top: 64px;
         }
         form {
+            text-align: center;
             width: 80%;
+            max-width: 768px;
             margin: 0 auto;
             .form-field {
                 display: block;
@@ -200,6 +203,8 @@ body, html {
                 height: 100px;
             }
             button {
+                text-transform: uppercase;
+                letter-spacing: 4px;
                 display: block;
                 width: 100%;
                 border: none;
@@ -214,144 +219,17 @@ body, html {
             }
         }
     }
-    
 }
 
 .section-footer {
     background-color: $dark-gray;
-    height: $footer-height-xs;
+    height: 500px;
 }
 
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
-    .section-1 {
-        @include chevronSectionDown($section-1-height-sm);
-    }
-    .section-2 {
-        @include chevronSectionDown($section-2-height-sm);
-    }
-    .section-3 {
-        //height: #{$section-3-height-sm}vw;
-        min-height: 860px;
-    }
-    .section-4 {
-        height: #{$section-4-height-sm}vw;
-    }
-    .section-5 {
-        @include chevronSectionUp($section-5-height-sm);
-    }
-    .section-6 {
-        @include chevronSectionUp($section-6-height-sm);
-    }
-    .section-7 {
-        height: #{$section-7-height-sm}vw;
-    }
- }
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-    .section-1 {
-        @include chevronSectionDown($section-1-height-md);
-    }
-    .section-2 {
-        @include chevronSectionDown($section-2-height-md);
-    }
-    .section-3 {
-        //height: #{$section-3-height-md}vw;
-        
-        .content {
-            display: flex;
-            
-
-            .get-started {
-                width: 30%;
-                margin: 0;
-                padding: 0 28px;
-                min-height: 200px;
-                border: none;
-                border-left: 1px solid $light-text;
-                &:first-child { border-left: none; }
-                h4 {
-                    font-size: 22px;
-                    text-transform: uppercase;
-                    margin-top: 8px;
-                    margin-bottom: 0;
-                }
-                p {
-                    display: block;
-                    min-height: 100px;
-                    margin-top: 0;
-                    margin-bottom: 40px;
-                    line-height: 20px;
-                    font-size: 16px;
-                }
-            }
-        }
-    }
-    .section-4 {
-        height: #{$section-4-height-md}vw;
-    }
-    .section-5 {
-        @include chevronSectionUp($section-5-height-md);
-    }
-    .section-6 {
-        @include chevronSectionUp($section-6-height-md);
-    }
-    .section-7 {
-        height: #{$section-7-height-md}vw;
-    }
- }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { 
-    .section-1 {
-        @include chevronSectionDown($section-1-height-lg);
-    }
-    .section-2 {
-        @include chevronSectionDown($section-2-height-lg);
-    }
-    .section-3 {
-        height: #{$section-3-height-lg}vw;
-    }
-    .section-4 {
-        height: #{$section-4-height-lg}vw;
-    }
-    .section-5 {
-        @include chevronSectionUp($section-5-height-lg);
-    }
-    .section-6 {
-        @include chevronSectionUp($section-6-height-lg);
-    }
-    .section-7 {
-        height: #{$section-7-height-lg}vw;
-    }
-} 
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { 
-    .section-1 {
-        @include chevronSectionDown($section-1-height-xl);
-    }
-    .section-2 {
-        @include chevronSectionDown($section-2-height-xl);
-    }
-    .section-3 {
-        height: #{$section-3-height-xl}vw;
-    }
-    .section-4 {
-        height: #{$section-4-height-xl}vw;
-    }
-    .section-5 {
-        @include chevronSectionUp($section-5-height-xl);
-    }
-    .section-6 {
-        @include chevronSectionUp($section-6-height-xl);
-    }
-    .section-7 {
-        height: #{$section-7-height-xl}vw;
-    }
-}
+@import 'media-sm';
+@import 'media-md';
+@import 'media-lg';
+@import 'media-xl';
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {

@@ -1,0 +1,70 @@
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .section-1 {
+        @include chevronSectionDown($section-1-height-md);
+        .content {
+            .logo-title {                        
+                padding-top: 13vw;
+                width: 60vw;
+            }
+            p {
+                font-size: 20px;
+                margin-bottom: 13vw; 
+            }            
+        }
+    }
+    .section-2 {
+        @include chevronSectionDown($section-2-height-md);
+    }
+    .section-3 {                
+        .content {
+            margin-bottom: 60px;
+            display: flex;
+            .get-started {
+                width: 30%;
+                margin: 0;
+                padding: 0 28px;
+                border: none;
+                border-left: 1px solid $light-text;
+                &:first-child { 
+                    border-left: none; 
+                }
+                h4 {
+                    font-size: 22px;
+                    text-transform: uppercase;
+                    margin-top: 8px;
+                    margin-bottom: 0;
+                }
+                p {
+                    display: block;
+                    min-height: 100px;
+                    margin-top: 0;
+                    margin-bottom: 40px;
+                    line-height: 20px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .section-4 {
+        height: #{$section-4-height-md}vw;
+    }
+    .section-5 {
+        @include chevronSectionUp($section-5-height-md);
+    }
+    .section-6 {
+
+    }
+    .section-7 {
+        .content {            
+            form {                   
+                button {
+                    display: inline;                                        
+                    width: auto;
+                    padding: 15px 30px;
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+ }

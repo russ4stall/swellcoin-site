@@ -1,0 +1,40 @@
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .section-1 {
+        @include chevronSectionDown($section-1-height-sm);
+        .content {
+            .logo-title {                        
+                padding-top: 15vw;
+                width: 70vw;
+            }
+            p {
+                margin-bottom: 16vw; 
+            }            
+        }
+        .down-arrow-container {
+            bottom: 35px;
+        }
+    }
+    .section-2 {
+        @include chevronSectionDown($section-2-height-sm);
+    }
+    .section-3 {
+        
+    }
+    .section-4 {
+        height: #{$section-4-height-sm}vw;
+    }
+    .section-5 {
+        @include chevronSectionUp($section-5-height-sm);
+    }
+    .section-6 {
+        .content {
+            .section-title {
+                margin-bottom: 13vw;
+            }
+        }        
+    }
+    .section-7 {
+
+    }
+ }
