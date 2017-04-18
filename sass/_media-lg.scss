@@ -17,7 +17,11 @@
         @include chevronSectionDown($section-2-height-lg);
     }
     .section-3 {
-
+        .content {
+            .get-started {
+                padding: 0 48px;
+            }
+        }
      }
     .section-4 {
         height: #{$section-4-height-lg}vw;

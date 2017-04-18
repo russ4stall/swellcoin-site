@@ -1,5 +1,8 @@
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
+    .section-title {
+        font-size: 28px;
+    }
     .section-1 {
         @include chevronSectionDown($section-1-height-sm);
         .content {

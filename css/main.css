@@ -23,13 +23,13 @@ body, html {
 
 .content {
   width: 100%;
-  max-width: 960px;
+  max-width: 1200px;
   margin-right: auto;
   margin-left: auto; }
 
 .btn {
   font-size: 22px;
-  padding: 20px 20px;
+  padding: 15px 20px;
   text-decoration: none;
   background-color: #fff; }
 
@@ -108,7 +108,8 @@ body, html {
       font-size: 24px;
       text-transform: uppercase;
       margin-top: 8px;
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      letter-spacing: 2px; }
     .section-3 .content .get-started p {
       font-size: 22px; }
     .section-3 .content .get-started .btn {
@@ -204,6 +205,8 @@ body, html {
   height: 200px; }
 
 @media (min-width: 576px) {
+  .section-title {
+    font-size: 28px; }
   .section-1 {
     height: 90vw;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 76.11111%, 50% 100%, 0 76.11111%);
@@ -255,9 +258,7 @@ body, html {
       .section-3 .content .get-started:first-child {
         border-left: none; }
       .section-3 .content .get-started h4 {
-        font-size: 22px;
-        text-transform: uppercase;
-        margin-top: 8px;
+        margin-top: 20px;
         margin-bottom: 0; }
       .section-3 .content .get-started p {
         display: block;
@@ -265,7 +266,9 @@ body, html {
         margin-top: 0;
         margin-bottom: 40px;
         line-height: 20px;
-        font-size: 16px; }
+        font-size: 18px; }
+      .section-3 .content .get-started .btn {
+        margin-bottom: 38px; }
   .section-4 {
     height: 70vw; }
   .section-5 {
@@ -292,6 +295,8 @@ body, html {
     height: 65vw;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 66.92308%, 50% 100%, 0 66.92308%);
     clip-path: polygon(0 0, 100% 0, 100% 66.92308%, 50% 100%, 0 66.92308%); }
+  .section-3 .content .get-started {
+    padding: 0 48px; }
   .section-4 {
     height: 40vw; }
   .section-5 {
@@ -309,10 +314,16 @@ body, html {
     height: 40vw;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 46.25%, 50% 100%, 0 46.25%);
     clip-path: polygon(0 0, 100% 0, 100% 46.25%, 50% 100%, 0 46.25%); }
+    .section-1 .content .logo-title {
+      padding-top: 10vw; }
+    .section-1 .content p {
+      margin-bottom: 6vw; }
   .section-2 {
     height: 55vw;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 60.90909%, 50% 100%, 0 60.90909%);
     clip-path: polygon(0 0, 100% 0, 100% 60.90909%, 50% 100%, 0 60.90909%); }
+  .section-3 .content .get-started {
+    padding: 0 75px; }
   .section-4 {
     height: 40vw; }
   .section-5 {

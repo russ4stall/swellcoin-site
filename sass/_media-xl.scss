@@ -2,12 +2,24 @@
 @media (min-width: 1200px) { 
     .section-1 {
         @include chevronSectionDown($section-1-height-xl);
+        .content {
+            .logo-title {                        
+                padding-top: 10vw;
+            }
+            p {
+                margin-bottom: 6vw; 
+            }            
+        }
     }
     .section-2 {
         @include chevronSectionDown($section-2-height-xl);
     }
     .section-3 {
-
+        .content {
+            .get-started {
+                padding: 0 75px;
+            }
+        }
     }
     .section-4 {
         height: #{$section-4-height-xl}vw;
