@@ -36,6 +36,33 @@ body, html {
 .spacer-20 {
   height: 20px; }
 
+#main-nav {
+  z-index: 101;
+  position: relative; }
+  #main-nav #nav-title {
+    display: none; }
+  #main-nav #nav-toggle {
+    position: absolute;
+    background-image: url("../img/hamburger_white.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 32px;
+    height: 32px;
+    margin: 10px 0 0 15px; }
+    #main-nav #nav-toggle:hover {
+      cursor: pointer; }
+  #main-nav ul {
+    margin: 0;
+    padding: 0;
+    display: none; }
+    #main-nav ul li {
+      list-style-type: none; }
+      #main-nav ul li a {
+        display: block;
+        padding: 15px;
+        color: #fff;
+        text-decoration: none; }
+
 .section-1 {
   text-align: center;
   background-image: -moz-linear-gradient(left, rgba(133, 193, 79, 0.9) 0%, rgba(69, 155, 188, 0.9) 100%), url("../img/bg1.jpg");
@@ -49,21 +76,22 @@ body, html {
   clip-path: polygon(0 0, 100% 0, 100% 83.46154%, 50% 100%, 0 83.46154%);
   z-index: 100;
   color: white; }
-  .section-1 .content .logo-title {
-    padding-top: 25vw;
-    width: 85vw; }
-  .section-1 .content p {
-    font-size: 20px;
-    margin-bottom: 16vw; }
-  .section-1 .content .btn {
-    padding: 14px 40px;
-    font-size: 22px;
-    border: 2px solid #fff;
-    transition: all 0.3s ease;
-    color: #4fa374; }
-    .section-1 .content .btn:hover {
-      background-color: transparent;
-      color: #fff; }
+  .section-1 .content {
+    padding-top: 25vw; }
+    .section-1 .content .logo-title {
+      width: 85vw; }
+    .section-1 .content p {
+      font-size: 20px;
+      margin-bottom: 16vw; }
+    .section-1 .content .btn {
+      padding: 14px 40px;
+      font-size: 22px;
+      border: 2px solid #fff;
+      transition: all 0.3s ease;
+      color: #4fa374; }
+      .section-1 .content .btn:hover {
+        background-color: transparent;
+        color: #fff; }
   .section-1 .down-arrow-container {
     position: absolute;
     width: 100%;
@@ -183,7 +211,8 @@ body, html {
       width: 100%;
       padding: 10px 20px;
       margin: 10px 0;
-      box-sizing: border-box; }
+      box-sizing: border-box;
+      font-family: inherit; }
     .section-7 .content form textarea.form-field {
       height: 100px; }
     .section-7 .content form button {
@@ -211,11 +240,12 @@ body, html {
     height: 90vw;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 76.11111%, 50% 100%, 0 76.11111%);
     clip-path: polygon(0 0, 100% 0, 100% 76.11111%, 50% 100%, 0 76.11111%); }
-    .section-1 .content .logo-title {
-      padding-top: 15vw;
-      width: 70vw; }
-    .section-1 .content p {
-      margin-bottom: 16vw; }
+    .section-1 .content {
+      padding-top: 15vw; }
+      .section-1 .content .logo-title {
+        width: 70vw; }
+      .section-1 .content p {
+        margin-bottom: 16vw; }
     .section-1 .down-arrow-container {
       bottom: 35px; }
   .section-2 {
@@ -232,16 +262,59 @@ body, html {
     margin-bottom: 13vw; } }
 
 @media (min-width: 768px) {
+  #main-nav {
+    z-index: 101;
+    position: relative; }
+    #main-nav #nav-title {
+      background-image: url("../img/SwellcoinLogoWhite.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      display: block;
+      float: left;
+      width: 100px;
+      height: 32px;
+      margin: 10px 0 0 15px; }
+    #main-nav #nav-toggle {
+      display: none; }
+    #main-nav ul {
+      display: block !important;
+      margin: 0;
+      margin-right: 10px;
+      float: right; }
+      #main-nav ul li {
+        list-style-type: none;
+        float: left;
+        margin: 10px; }
+        #main-nav ul li a {
+          color: #fff;
+          text-decoration: none;
+          padding: 5px;
+          border-bottom: 1px solid transparent;
+          transition: border-bottom 0.3s ease-in-out 0s; }
+          #main-nav ul li a:hover {
+            border-bottom: 1px solid #fff; }
+          #main-nav ul li a.sign-in {
+            padding: 5px 10px;
+            border: 1px solid #fff;
+            border-radius: 50px;
+            font-weight: 400;
+            transition: all .3s ease; }
+            #main-nav ul li a.sign-in:hover {
+              color: #459bbc;
+              background-color: #fff; }
+  nav {
+    display: block; }
   .section-1 {
     height: 65vw;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 66.92308%, 50% 100%, 0 66.92308%);
     clip-path: polygon(0 0, 100% 0, 100% 66.92308%, 50% 100%, 0 66.92308%); }
-    .section-1 .content .logo-title {
-      padding-top: 13vw;
-      width: 60vw; }
-    .section-1 .content p {
-      font-size: 20px;
-      margin-bottom: 13vw; }
+    .section-1 .content {
+      padding-top: 13vw; }
+      .section-1 .content .logo-title {
+        width: 60vw; }
+      .section-1 .content p {
+        font-size: 20px;
+        margin-bottom: 13vw; }
   .section-2 {
     height: 70vw;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 69.28571%, 50% 100%, 0 69.28571%);
@@ -286,11 +359,12 @@ body, html {
     height: 50vw;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 57%, 50% 100%, 0 57%);
     clip-path: polygon(0 0, 100% 0, 100% 57%, 50% 100%, 0 57%); }
-    .section-1 .content .logo-title {
-      padding-top: 10vw;
-      width: 480px; }
-    .section-1 .content p {
-      margin-bottom: 9vw; }
+    .section-1 .content {
+      padding-top: 10vw; }
+      .section-1 .content .logo-title {
+        width: 480px; }
+      .section-1 .content p {
+        margin-bottom: 9vw; }
   .section-2 {
     height: 65vw;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 66.92308%, 50% 100%, 0 66.92308%);
@@ -314,10 +388,10 @@ body, html {
     height: 40vw;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 46.25%, 50% 100%, 0 46.25%);
     clip-path: polygon(0 0, 100% 0, 100% 46.25%, 50% 100%, 0 46.25%); }
-    .section-1 .content .logo-title {
+    .section-1 .content {
       padding-top: 10vw; }
-    .section-1 .content p {
-      margin-bottom: 6vw; }
+      .section-1 .content p {
+        margin-bottom: 6vw; }
   .section-2 {
     height: 55vw;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 60.90909%, 50% 100%, 0 60.90909%);

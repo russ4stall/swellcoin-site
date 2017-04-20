@@ -48,6 +48,43 @@ body, html {
     height: 20px;
 }
 
+#main-nav {
+    z-index: 101;
+    position: relative;            
+    #nav-title {
+        display: none;
+    }    
+    #nav-toggle {
+        position: absolute;
+        background-image: url("../img/hamburger_white.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 32px;
+        height: 32px;
+        margin: 10px 0 0 15px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    ul {                
+        margin: 0;
+        padding: 0;
+        display: none;
+        li {                
+            list-style-type: none;
+            a {                
+                display: block;
+                padding: 15px;
+                color: #fff;
+                text-decoration: none;                
+                &:hover {
+                    //background-color: $brand-blue; 
+                }
+            }             
+        }
+    }   
+}
+
 .section-1 {    
     text-align: center;
     @include backgroundImageGradient($bgImgUrl1);    
@@ -55,8 +92,8 @@ body, html {
     z-index: 100;
     color: $light-text; 
     .content {
+        padding-top: 25vw; 
         .logo-title {                        
-            padding-top: 25vw;
             width: 85vw;
         }
         p {
@@ -199,7 +236,8 @@ body, html {
                 width: 100%;
                 padding: 10px 20px;
                 margin: 10px 0;
-                box-sizing: border-box;                
+                box-sizing: border-box;            
+                font-family: inherit;    
             }
             textarea.form-field {
                 height: 100px;

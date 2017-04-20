@@ -1,11 +1,69 @@
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+    #main-nav {
+        z-index: 101;
+        position: relative;
+        #nav-title {
+            
+                background-image: url("../img/SwellcoinLogoWhite.png");
+                background-repeat: no-repeat;
+                background-size: contain;        
+            display: block;
+            float: left;
+            width: 100px;     
+            height: 32px;
+            margin: 10px 0 0 15px;                           
+            
+        }
+        #nav-toggle {
+            display: none;
+        }
+        ul {        
+            display: block !important;
+            margin: 0;
+            margin-right: 10px;
+            float: right;
+            li {                
+                list-style-type: none;
+                float: left; 
+                margin: 10px;
+                a {                
+                    //margin: 10px;
+                    color: #fff;
+                    text-decoration: none;
+                    padding: 5px;        
+                    border-bottom: 1px solid transparent;                
+                    transition: border-bottom 0.3s ease-in-out 0s;
+                    &:hover {
+                        border-bottom: 1px solid $white;
+                        //font-weight: 400;
+                    }
+                    &.sign-in {
+                        padding: 5px 10px;
+                        border: 1px solid #fff;
+                        border-radius: 50px;
+                        font-weight: 400;
+                        transition: all .3s ease;
+                        &:hover {
+                            color: $brand-blue;
+                            background-color: $white;
+                        }
+                    }
+                }             
+            }
+        }   
+    }
+
+    nav {
+        display: block;
+    }
+
     .section-1 {
         @include chevronSectionDown($section-1-height-md);
         .content {
+            padding-top: 13vw;
             .logo-title {                        
-                padding-top: 13vw;
-                width: 60vw;
+                width: 60vw; 
             }
             p {
                 font-size: 20px;

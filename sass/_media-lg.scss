@@ -3,9 +3,8 @@
     .section-1 {
         @include chevronSectionDown($section-1-height-lg);
         .content {
-            .logo-title {                        
-                padding-top: 10vw;
-                //width: 45vw;
+            padding-top: 10vw;
+            .logo-title {                                        
                 width: 480px;
             }
             p {
