@@ -29,6 +29,13 @@ body, html {
     letter-spacing: 8px;
 }
 
+.page-title {
+    text-align: center;    
+    text-transform: uppercase;
+    font-size: 24px;
+    letter-spacing: 8px;
+}
+
 .content { 
     width: 100%;
     //max-width: 960px;
@@ -266,6 +273,35 @@ body, html {
     height: 200px;
 }
 
+// INFO PAGES
+
+body.info-page {
+    background-color: $white;    
+    #main-nav {
+        @include backgroundImageGradient($bgImgUrl1);    
+        position: absolute;
+        top: 0;
+        width: 100%;
+        float: left;
+        #nav-title {
+            margin: 20px 0 0 15px;
+        }
+        ul {
+            margin: 10px;
+        }
+    }
+    .page-content { 
+        margin-top: 71px;
+        padding-top: 20px;
+        max-width: 960px;
+        text-align: center;
+        h2 {
+            color: $brand-green;
+        }
+    }
+
+}
+
 @import 'media-sm';
 @import 'media-md';
 @import 'media-lg';
@@ -277,4 +313,17 @@ body, html {
         background-attachment: scroll;
         
     }
+}
+
+//utils
+.text-center {
+    text-align: center;
+}
+
+.brand-blue {
+    color: $brand-blue;
+}
+
+.brand-green {
+    color: $brand-green;
 }

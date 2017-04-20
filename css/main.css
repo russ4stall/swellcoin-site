@@ -21,6 +21,12 @@ body, html {
   font-size: 24px;
   letter-spacing: 8px; }
 
+.page-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 24px;
+  letter-spacing: 8px; }
+
 .content {
   width: 100%;
   max-width: 1200px;
@@ -233,6 +239,31 @@ body, html {
   background-color: #3d3d3d;
   height: 200px; }
 
+body.info-page {
+  background-color: #fff; }
+  body.info-page #main-nav {
+    background-image: -moz-linear-gradient(left, rgba(133, 193, 79, 0.9) 0%, rgba(69, 155, 188, 0.9) 100%), url("../img/bg1.jpg");
+    /* FF3.6-15 */
+    background-image: -webkit-linear-gradient(left, rgba(133, 193, 79, 0.9) 0%, rgba(69, 155, 188, 0.9) 100%), url("../img/bg1.jpg");
+    /* Chrome10-25,Safari5.1-6 */
+    background-image: linear-gradient(to right, rgba(133, 193, 79, 0.9) 0%, rgba(69, 155, 188, 0.9) 100%), url("../img/bg1.jpg");
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    position: absolute;
+    top: 0;
+    width: 100%;
+    float: left; }
+    body.info-page #main-nav #nav-title {
+      margin: 20px 0 0 15px; }
+    body.info-page #main-nav ul {
+      margin: 10px; }
+  body.info-page .page-content {
+    margin-top: 71px;
+    padding-top: 20px;
+    max-width: 960px;
+    text-align: center; }
+    body.info-page .page-content h2 {
+      color: #85c14f; }
+
 @media (min-width: 576px) {
   .section-title {
     font-size: 28px; }
@@ -411,3 +442,12 @@ body, html {
 @media only screen and (max-device-width: 1024px) {
   .bgimg {
     background-attachment: scroll; } }
+
+.text-center {
+  text-align: center; }
+
+.brand-blue {
+  color: #459bbc; }
+
+.brand-green {
+  color: #85c14f; }
