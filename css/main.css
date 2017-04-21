@@ -55,16 +55,18 @@ body {
   position: relative; }
   #main-nav #nav-title {
     display: none; }
+  #main-nav #nav-toggle-container {
+    width: 100%; }
   #main-nav #nav-toggle {
     position: absolute;
-    margin: 10px 0 0 15px;
+    right: 0;
+    float: right;
+    margin: 15px 15px 0 0;
     width: 40px;
     height: 40px;
     transform: rotate(0deg);
     transition: .5s ease-in-out;
     cursor: pointer; }
-    #main-nav #nav-toggle:hover {
-      cursor: pointer; }
     #main-nav #nav-toggle span {
       display: block;
       position: absolute;
@@ -98,14 +100,21 @@ body {
   #main-nav ul {
     margin: 0;
     padding: 0;
+    padding-top: 55px;
     display: none; }
     #main-nav ul li {
-      list-style-type: none; }
+      list-style-type: none;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 3px; }
       #main-nav ul li a {
         display: block;
         padding: 15px;
-        color: #fff;
-        text-decoration: none; }
+        color: white;
+        text-decoration: none;
+        transition: all .2s ease; }
+        #main-nav ul li a:hover {
+          color: rgba(255, 255, 255, 0.2); }
 
 .section-1 {
   text-align: center;
@@ -305,9 +314,21 @@ body.info-page {
     width: 100%;
     float: left; }
     body.info-page #main-nav #nav-title {
-      margin: 20px 0 0 15px; }
+      position: absolute;
+      background-image: url("../img/SwellcoinLogo.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      display: block;
+      float: left;
+      width: 100px;
+      height: 32px;
+      margin: 10px 0 0 15px; }
+      body.info-page #main-nav #nav-title.open {
+        background-image: url("../img/SwellcoinLogoWhite.png"); }
     body.info-page #main-nav #nav-toggle span {
       background: #3d3d3d; }
+    body.info-page #main-nav #nav-toggle.open span {
+      background: #fff; }
     body.info-page #main-nav ul {
       margin: 10px; }
   body.info-page .page-content {

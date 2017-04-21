@@ -71,32 +71,26 @@ body {
     #nav-title {
         display: none;
     }    
+    #nav-toggle-container {
+        width: 100%;
+    }
     #nav-toggle {
-        position: absolute;
-        //background-image: url("../img/hamburger_white.png");
-        //background-repeat: no-repeat;
-        //background-size: contain;
-        //width: 32px;
-        //height: 32px;
-        margin: 10px 0 0 15px;
-        &:hover {
-            cursor: pointer;
-        }
-
-        // fancy animated toggle
+        position: absolute;        
+        right: 0;        
+        float: right;
+        margin: 15px 15px 0 0;        
         width: 40px;
         height: 40px;
-        //position: relative;
-        //margin: 50px auto;            
+
         transform: rotate(0deg);            
         transition: .5s ease-in-out; 
         cursor: pointer;
         span {
             display: block;
-            position: absolute;
+            position: absolute;            
             height: 4px;
             width: 100%;
-            background: $white;            
+            background: $white;         
             opacity: 1;
             left: 0;                
             transform: rotate(0deg);                
@@ -115,7 +109,7 @@ body {
             }
         }
 
-        &.open span {
+        &.open span {            
             &:nth-child(1) {
                 top: 18px;
                 width: 0%;
@@ -138,16 +132,21 @@ body {
     ul {                
         margin: 0;
         padding: 0;
-        display: none;
-        li {                
+        padding-top: 55px;
+        display: none;        
+        li {                      
             list-style-type: none;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 3px;       
             a {                
                 display: block;
                 padding: 15px;
-                color: #fff;
+                color: $light-text;
                 text-decoration: none;                
+                transition: all .2s ease;
                 &:hover {
-                    //background-color: $brand-blue; 
+                    color: transparentize($light-text, .8);                        
                 }
             }             
         }
@@ -373,12 +372,26 @@ body.info-page {
         width: 100%;
         float: left;
         #nav-title {
-            margin: 20px 0 0 15px;
+            position: absolute;
+            background-image: url("../img/SwellcoinLogo.png");
+            background-repeat: no-repeat;
+            background-size: contain;        
+            display: block;
+            float: left;
+            width: 100px;     
+            height: 32px;
+            margin: 10px 0 0 15px;             
+            &.open {
+                background-image: url("../img/SwellcoinLogoWhite.png");
+            }
         }
         #nav-toggle {          
             span {                
                 background: $dark-gray;
-            }  
+            }
+            &.open span {
+                background: $white;
+            }
         }
         ul {
             margin: 10px;
