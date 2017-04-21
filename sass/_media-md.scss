@@ -126,4 +126,41 @@
             }
         }
     }
+
+    .section-footer {                
+        ul {                                            
+            li {
+                font-size: 16px;
+                display: inline-block;
+                
+                border-right: 1px solid;
+                &:last-child {
+                    border-right: none;
+                }
+            }
+        }        
+    }
+ 
+ // INFO PAGES
+
+    body.info-page {
+        background-color: $white;    
+        #main-nav {
+            @include backgroundImageGradient($bgImgUrl1);    
+            position: absolute;
+            top: 0;
+            width: 100%;
+            float: left;
+            #nav-title {
+                margin: 20px 0 0 15px;
+            }
+            ul {
+                margin: 10px;
+            }
+        } 
+        .page-content {
+            margin-top: 71px;    
+        }       
+    }
  }
+

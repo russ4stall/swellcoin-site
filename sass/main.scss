@@ -1,12 +1,22 @@
 @import 'variables';
 @import 'mixins';
 
-body, html {
-  height: 100%;
+html {
+    height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
   margin: 0;  
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   background-color: $dark-gray;
+}
+
+.page-container {
+    flex: 1;
 }
 
 .bgimg {
@@ -63,15 +73,67 @@ body, html {
     }    
     #nav-toggle {
         position: absolute;
-        background-image: url("../img/hamburger_white.png");
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 32px;
-        height: 32px;
+        //background-image: url("../img/hamburger_white.png");
+        //background-repeat: no-repeat;
+        //background-size: contain;
+        //width: 32px;
+        //height: 32px;
         margin: 10px 0 0 15px;
         &:hover {
             cursor: pointer;
         }
+
+        // fancy animated toggle
+        width: 40px;
+        height: 40px;
+        //position: relative;
+        //margin: 50px auto;            
+        transform: rotate(0deg);            
+        transition: .5s ease-in-out; 
+        cursor: pointer;
+        span {
+            display: block;
+            position: absolute;
+            height: 4px;
+            width: 100%;
+            background: $white;            
+            opacity: 1;
+            left: 0;                
+            transform: rotate(0deg);                
+            transition: .3s ease-in-out;
+            &:nth-child(1) {
+                top: 0px;
+            }
+            &:nth-child(2) {
+                top: 12px;
+            }             
+            &:nth-child(3)  {
+                top: 12px;
+            }                 
+            &:nth-child(4) {
+                top: 24px;
+            }
+        }
+
+        &.open span {
+            &:nth-child(1) {
+                top: 18px;
+                width: 0%;
+                left: 50%;
+            }
+            &:nth-child(2) {
+                transform: rotate(45deg);
+            }
+            &:nth-child(3) {
+                transform: rotate(-45deg);
+            }                
+            &:nth-child(4) {
+                top: 18px;
+                width: 0%;
+                left: 50%;
+            }
+        }
+
     }
     ul {                
         margin: 0;
@@ -262,15 +324,42 @@ body, html {
                     background-color: rgba(255, 255, 255, 1);
                     color: #4fa374;
                     cursor: pointer;
-                }
+                } 
             }
         }
     }
 }
 
 .section-footer {
-    background-color: $dark-gray;
-    height: 200px;
+    background-color: $dark-gray;        
+    
+        color: $light-text;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 3px;        
+        ul {
+            margin: 40px 0 0 0;
+            padding: 0;
+            li {
+                list-style: none;
+                margin: 10px 0;
+                a {
+                    color: $light-text;
+                    padding: 10px;
+                    text-decoration: none;
+                    transition: all .2s ease;
+                    &:hover {
+                        color: transparentize($light-text, .8);                        
+                    }
+                }
+            }
+        }
+        p {
+            font-size: 12px;
+            color: transparentize($light-text, .5);
+            margin: 40px 0;
+        }
+    
 }
 
 // INFO PAGES
@@ -278,28 +367,31 @@ body, html {
 body.info-page {
     background-color: $white;    
     #main-nav {
-        @include backgroundImageGradient($bgImgUrl1);    
-        position: absolute;
+        background-color: $dark-gray; 
+        //position: absolute;
         top: 0;
         width: 100%;
         float: left;
         #nav-title {
             margin: 20px 0 0 15px;
         }
+        #nav-toggle {          
+            span {                
+                background: $dark-gray;
+            }  
+        }
         ul {
             margin: 10px;
         }
     }
     .page-content { 
-        margin-top: 71px;
-        padding-top: 20px;
-        max-width: 960px;
-        text-align: center;
-        h2 {
-            color: $brand-green;
-        }
+        float: left;
+        margin-top: 21px;        
+        padding: 20px 10px 60px 10px;
+        max-width: 960px;            
+        margin-left: auto;
+        margin-right: auto;
     }
-
 }
 
 @import 'media-sm';
