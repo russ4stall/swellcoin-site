@@ -3,39 +3,37 @@
     #main-nav {
         z-index: 101;
         position: relative;
-        #nav-title {
-            
-            background-image: url("../img/SwellcoinLogoWhite.png");
+        #nav-title {            
+            background-image: url("../img/SwellcoinLogoWhite.png") !important;
             background-repeat: no-repeat;
             background-size: contain;        
             display: block;
             float: left;
             width: 100px;     
-            height: 32px;
-            margin: 10px 0 0 15px;                           
-            
+            height: 32px;                                       
+            margin: 20px 0 0 20px;
         }
         #nav-toggle {
             display: none;
         }
         ul {        
             display: block !important;
-            margin: 0;
-            margin-right: 10px;
+            margin: 10px;
             float: right;
+            padding-top: 0;
             li {                
                 list-style-type: none;
                 float: left; 
                 margin: 10px;
                 a {                
-                    //margin: 10px;
-                    color: #fff;
+                    //margin: 10px;                    
                     text-decoration: none;
                     padding: 5px;        
                     border-bottom: 1px solid transparent;                
                     transition: border-bottom 0.3s ease-in-out 0s;
                     &:hover {
                         border-bottom: 1px solid $white;
+                        color: $light-text;
                         //font-weight: 400;
                     }
                     &.sign-in {
@@ -150,16 +148,11 @@
             position: absolute;
             top: 0;
             width: 100%;
-            float: left;
-            #nav-title {
-                margin: 20px 0 0 15px;
-            }
-            ul {
-                margin: 10px;
-            }
+            float: left;            
         } 
         .page-content {
             margin-top: 71px;    
+            float: none;
         }       
     }
  }

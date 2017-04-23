@@ -33,7 +33,8 @@ body {
   text-align: center;
   text-transform: uppercase;
   font-size: 24px;
-  letter-spacing: 8px; }
+  letter-spacing: 8px;
+  margin: 60px 0; }
 
 .content {
   width: 100%;
@@ -54,7 +55,8 @@ body {
   z-index: 101;
   position: relative; }
   #main-nav #nav-title {
-    display: none; }
+    display: none;
+    margin: 15px 0 0 15px; }
   #main-nav #nav-toggle-container {
     width: 100%; }
   #main-nav #nav-toggle {
@@ -321,8 +323,7 @@ body.info-page {
       display: block;
       float: left;
       width: 100px;
-      height: 32px;
-      margin: 10px 0 0 15px; }
+      height: 32px; }
       body.info-page #main-nav #nav-title.open {
         background-image: url("../img/SwellcoinLogoWhite.png"); }
     body.info-page #main-nav #nav-toggle span {
@@ -372,33 +373,33 @@ body.info-page {
     z-index: 101;
     position: relative; }
     #main-nav #nav-title {
-      background-image: url("../img/SwellcoinLogoWhite.png");
+      background-image: url("../img/SwellcoinLogoWhite.png") !important;
       background-repeat: no-repeat;
       background-size: contain;
       display: block;
       float: left;
       width: 100px;
       height: 32px;
-      margin: 10px 0 0 15px; }
+      margin: 20px 0 0 20px; }
     #main-nav #nav-toggle {
       display: none; }
     #main-nav ul {
       display: block !important;
-      margin: 0;
-      margin-right: 10px;
-      float: right; }
+      margin: 10px;
+      float: right;
+      padding-top: 0; }
       #main-nav ul li {
         list-style-type: none;
         float: left;
         margin: 10px; }
         #main-nav ul li a {
-          color: #fff;
           text-decoration: none;
           padding: 5px;
           border-bottom: 1px solid transparent;
           transition: border-bottom 0.3s ease-in-out 0s; }
           #main-nav ul li a:hover {
-            border-bottom: 1px solid #fff; }
+            border-bottom: 1px solid #fff;
+            color: white; }
           #main-nav ul li a.sign-in {
             padding: 5px 10px;
             border: 1px solid #fff;
@@ -478,12 +479,9 @@ body.info-page {
       top: 0;
       width: 100%;
       float: left; }
-      body.info-page #main-nav #nav-title {
-        margin: 20px 0 0 15px; }
-      body.info-page #main-nav ul {
-        margin: 10px; }
     body.info-page .page-content {
-      margin-top: 71px; } }
+      margin-top: 71px;
+      float: none; } }
 
 @media (min-width: 992px) {
   .section-1 {

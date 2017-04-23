@@ -44,6 +44,7 @@ body {
     text-transform: uppercase;
     font-size: 24px;
     letter-spacing: 8px;
+    margin: 60px 0;
 }
 
 .content { 
@@ -70,6 +71,7 @@ body {
     position: relative;            
     #nav-title {
         display: none;
+        margin: 15px 0 0 15px;             
     }    
     #nav-toggle-container {
         width: 100%;
@@ -379,8 +381,7 @@ body.info-page {
             display: block;
             float: left;
             width: 100px;     
-            height: 32px;
-            margin: 10px 0 0 15px;             
+            height: 32px;            
             &.open {
                 background-image: url("../img/SwellcoinLogoWhite.png");
             }
