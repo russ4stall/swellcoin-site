@@ -18,7 +18,6 @@
     "postcss-clip-path-polyfill": "^1.0.4"
   },
   "dependencies": {
-    "jquery": "^3.2.1",
-    "responsive-nav": "^1.0.39"
+    "jquery": "^3.2.1"    
   }
 }
