@@ -401,11 +401,15 @@ body.info-page {
     .page-content { 
         float: left;
         margin-top: 21px;        
-        padding: 20px 10px 60px 10px;
+        padding: 20px 0 60px 0;
         max-width: 960px;         
         width: 100%;   
         margin-left: auto;
         margin-right: auto;
+        p, h1, h2, h3, h4, h5, h6 {
+            padding-right: 10px;
+            padding-left: 10px;
+        }        
     }
 }
 
@@ -414,7 +418,6 @@ body.info-page {
 @import 'media-lg';
 @import 'media-xl';
 
-/* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
     .bgimg {
         background-attachment: scroll;

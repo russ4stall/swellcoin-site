@@ -335,11 +335,14 @@ body.info-page {
   body.info-page .page-content {
     float: left;
     margin-top: 21px;
-    padding: 20px 10px 60px 10px;
+    padding: 20px 0 60px 0;
     max-width: 960px;
     width: 100%;
     margin-left: auto;
     margin-right: auto; }
+    body.info-page .page-content p, body.info-page .page-content h1, body.info-page .page-content h2, body.info-page .page-content h3, body.info-page .page-content h4, body.info-page .page-content h5, body.info-page .page-content h6 {
+      padding-right: 10px;
+      padding-left: 10px; }
 
 @media (min-width: 576px) {
   .section-title {
@@ -537,7 +540,6 @@ body.info-page {
     .section-5 .content {
       line-height: 37vw; } }
 
-/* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
   .bgimg {
     background-attachment: scroll; } }
