@@ -5,9 +5,10 @@
   "main": "",
   "scripts": {
     "prebuild": "mkdirp dist/css && mkdirp dist/js && mkdirp dist/img",
-    "build": "npm run sass && npm run postcss && npm run render-html && npm run cp-images && npm run cp-js",
+    "build": "npm run compile-css && npm run render-html && npm run cp-images && npm run cp-js",
     "postcss": "postcss src/css/main.css -o dist/css/styles.css",
     "render-html": "node render-html.js",
+    "compile-css": "npm run sass && npm run postcss",
     "cp-images": "copyfiles -f src/img/* dist/img",
     "cp-js": "copyfiles -f src/js/site.js dist/js && copyfiles -f node_modules/jquery/dist/jquery.min.js dist/js",
     "sass": "node-sass src/sass/main.scss -o src/css",
