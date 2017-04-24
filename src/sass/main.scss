@@ -248,10 +248,14 @@ body {
 }
 
 .section-4 {
-    background-color: $dark-gray;
-    height: #{$section-4-height-xs}vw;        
+    background-color: $dark-gray;    
+    height: #{$section-4-height-xs}vw;
     z-index: 80;
     color: $light-text; 
+    .carousel {
+        text-align: center;
+        font-size: 22px;        
+    }
 }
 
 .section-5 {

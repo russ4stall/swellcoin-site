@@ -5,12 +5,12 @@
   "main": "",
   "scripts": {
     "prebuild": "mkdirp dist/css && mkdirp dist/js && mkdirp dist/img",
-    "build": "npm run compile-css && npm run render-html && npm run cp-images && npm run cp-js",
+    "build": "npm run make-css && npm run render-html && npm run img && npm run js",
     "postcss": "postcss src/css/main.css -o dist/css/styles.css",
     "render-html": "node render-html.js",
-    "compile-css": "npm run sass && npm run postcss",
-    "cp-images": "copyfiles -f src/img/* dist/img",
-    "cp-js": "copyfiles -f src/js/site.js dist/js && copyfiles -f node_modules/jquery/dist/jquery.min.js dist/js",
+    "make-css": "npm run sass && npm run postcss && copyfiles -f node_modules/slick-carousel/slick/slick.css dist/css",
+    "img": "copyfiles -f src/img/* dist/img",
+    "js": "copyfiles -f src/js/site.js dist/js && copyfiles -f node_modules/jquery/dist/jquery.min.js dist/js && copyfiles -f node_modules/slick-carousel/slick/slick.min.js dist/js",
     "sass": "node-sass src/sass/main.scss -o src/css",
     "sasswatch": "node-sass --watch src/sass/main.scss -o dist/css"
   },
@@ -20,12 +20,13 @@
     "autoprefixer": "^6.7.7",
     "copyfiles": "^1.2.0",
     "handlebars": "^4.0.6",
+    "jquery": "^3.2.1",
     "mkdirp": "^0.5.1",
     "node-sass": "^4.5.2",
     "postcss": "^5.2.16",
     "postcss-cli": "^3.1.1",
     "postcss-clip-path-polyfill": "^1.0.4",
-    "title-case": "^2.1.1",
-    "jquery": "^3.2.1"
+    "slick-carousel": "^1.6.0",
+    "title-case": "^2.1.1"
   }
 }
