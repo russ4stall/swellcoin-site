@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
     // Mobile Navbar toggle
     $("#nav-toggle").click(function () {
         $(this).toggleClass('open');
@@ -17,5 +16,4 @@ $(document).ready(function () {
             next();
         });
     });
-
 }); 
