@@ -203,7 +203,7 @@ body {
     background: $white;    
     @include chevronSectionDown($section-2-height-xs);
     z-index: 90; 
-    margin-top: -#{$chevron-angle + 9}vw;
+    margin-top: -#{$chevron-angle + 10}vw;
     .section-title {
         padding-top: #{$chevron-angle + 9}vw;    
     }
