@@ -48,6 +48,16 @@ body {
   text-decoration: none;
   background-color: #fff; }
 
+.sign-up-btn {
+  padding: 14px 40px;
+  font-size: 22px;
+  border: 2px solid #fff;
+  transition: all 0.3s ease;
+  color: #4fa374; }
+  .sign-up-btn:hover {
+    background-color: transparent;
+    color: #fff; }
+
 .spacer-20 {
   height: 20px; }
 
@@ -138,15 +148,6 @@ body {
     .section-1 .content p {
       font-size: 20px;
       margin-bottom: 16vw; }
-    .section-1 .content .btn {
-      padding: 14px 40px;
-      font-size: 22px;
-      border: 2px solid #fff;
-      transition: all 0.3s ease;
-      color: #4fa374; }
-      .section-1 .content .btn:hover {
-        background-color: transparent;
-        color: #fff; }
   .section-1 .down-arrow-container {
     position: absolute;
     width: 100%;
@@ -166,7 +167,9 @@ body {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 73.125%, 50% 100%, 0 73.125%);
   clip-path: polygon(0 0, 100% 0, 100% 73.125%, 50% 100%, 0 73.125%);
   z-index: 90;
-  margin-top: -21.5vw; }
+  margin-top: -30.5vw; }
+  .section-2 .section-title {
+    padding-top: 30.5vw; }
   .section-2 .content {
     color: #1d1d1d; }
 

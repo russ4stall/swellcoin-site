@@ -62,6 +62,18 @@ body {
     background-color: $white;    
 }
 
+.sign-up-btn {            
+    padding: 14px 40px;      
+    font-size: 22px;
+    border: 2px solid $white;
+    transition: all 0.3s ease;
+    color: #4fa374;   
+    &:hover {
+        background-color: transparent;
+        color: $white;
+    }      
+}
+
 .spacer-20 {
     height: 20px;
 }
@@ -170,17 +182,6 @@ body {
             font-size: 20px;
             margin-bottom: 16vw; 
         }
-        .btn {            
-            padding: 14px 40px;      
-            font-size: 22px;
-            border: 2px solid $white;
-            transition: all 0.3s ease;
-            color: #4fa374;   
-            &:hover {
-                background-color: transparent;
-                color: $white;
-            }      
-        }
     }
     .down-arrow-container {
         position: absolute;
@@ -202,10 +203,12 @@ body {
     background: $white;    
     @include chevronSectionDown($section-2-height-xs);
     z-index: 90; 
-    margin-top: -#{$chevron-angle}vw;
-    //padding-top: #{$chevron-angle + 3}vw;    
+    margin-top: -#{$chevron-angle + 9}vw;
+    .section-title {
+        padding-top: #{$chevron-angle + 9}vw;    
+    }
     .content {
-        color: $dark-text;
+        color: $dark-text; 
     }
 }
 
