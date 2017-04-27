@@ -83,11 +83,15 @@
   <div class="content">
     <h4 class="section-title">Contact</h4>
 
-    <form action="#">
+    <form id="contact-form" action="https://formspree.io/contact@swellcoin.com" method="POST">
+      <input type="text" name="_gotcha" style="display: none;" />
       <input class="form-field" type="text" name="name" placeholder="NAME" />
       <input class="form-field" type="email" name="email" placeholder="EMAIL" />
       <textarea class="form-field" name="question" placeholder="ASK US A QUESTION"></textarea>
-      <button class="btn">Send</button>
+      <button class="btn" type="button">Send</button>
     </form>
+
+    <p id="success-msg" style="display: none;">Thanks for contacting Swellcoin! <br/> You'll be hearing from us soon.</p>
+
   </div>
 </div>

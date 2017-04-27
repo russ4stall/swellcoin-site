@@ -167,7 +167,7 @@ body {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 73.125%, 50% 100%, 0 73.125%);
   clip-path: polygon(0 0, 100% 0, 100% 73.125%, 50% 100%, 0 73.125%);
   z-index: 90;
-  margin-top: -30.5vw; }
+  margin-top: -31.5vw; }
   .section-2 .section-title {
     padding-top: 30.5vw; }
   .section-2 .content {
@@ -256,8 +256,7 @@ body {
   background-image: linear-gradient(to right, rgba(133, 193, 79, 0.9) 0%, rgba(69, 155, 188, 0.9) 100%), url("../img/bg4.jpg");
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   height: 500px;
-  color: white;
-  margin-top: -32px; }
+  color: white; }
   .section-7 .content .section-title {
     margin-top: 0;
     padding-top: 64px; }
@@ -314,6 +313,11 @@ body {
     color: rgba(255, 255, 255, 0.5);
     margin: 40px 0; }
 
+#success-msg {
+  text-align: center;
+  font-size: 22px;
+  line-height: 60px; }
+
 body.info-page {
   background-color: #fff; }
   body.info-page #main-nav {
@@ -341,7 +345,7 @@ body.info-page {
   body.info-page .page-content {
     float: left;
     margin-top: 21px;
-    padding: 20px 0 60px 0;
+    padding-top: 20px;
     max-width: 960px;
     width: 100%;
     margin-left: auto;
@@ -349,6 +353,21 @@ body.info-page {
     body.info-page .page-content p, body.info-page .page-content h1, body.info-page .page-content h2, body.info-page .page-content h3, body.info-page .page-content h4, body.info-page .page-content h5, body.info-page .page-content h6 {
       padding-right: 10px;
       padding-left: 10px; }
+  body.info-page .sign-up-btn {
+    padding: 14px 40px;
+    display: block;
+    text-align: center;
+    width: 100px;
+    margin: 60px auto;
+    font-size: 22px;
+    font-weight: 400;
+    border: 2px solid #85c14f;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    color: #85c14f; }
+    body.info-page .sign-up-btn:hover {
+      background-color: #85c14f;
+      color: #fff; }
 
 @media (min-width: 576px) {
   .section-title {

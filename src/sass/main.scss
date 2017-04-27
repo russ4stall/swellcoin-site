@@ -296,7 +296,7 @@ body {
     @include backgroundImageGradient($bgImgUrl4);
     height: 500px;
     color: $light-text;
-    margin-top: -32px;
+    //margin-top: -32px;
     .content {
         .section-title {
             margin-top: 0;
@@ -370,6 +370,12 @@ body {
     
 }
 
+#success-msg {
+    text-align: center;
+    font-size: 22px;
+    line-height: 60px;
+}   
+
 // INFO PAGES
 
 body.info-page {
@@ -408,7 +414,7 @@ body.info-page {
     .page-content { 
         float: left;
         margin-top: 21px;        
-        padding: 20px 0 60px 0;
+        padding-top: 20px;
         max-width: 960px;         
         width: 100%;   
         margin-left: auto;
@@ -418,6 +424,23 @@ body.info-page {
             padding-left: 10px;
         }        
     }
+    .sign-up-btn {            
+    padding: 14px 40px;      
+    display: block;
+    text-align: center;
+    width: 100px;
+    margin: 60px auto;    
+    font-size: 22px;
+    font-weight: 400;
+    border: 2px solid $brand-green;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    color: $brand-green;   
+    &:hover {
+        background-color: $brand-green;
+        color: $white;
+    }      
+}
 }
 
 @import 'media-sm';
