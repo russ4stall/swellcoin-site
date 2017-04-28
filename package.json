@@ -4,13 +4,14 @@
   "description": "www.swellcoin.com static site",
   "main": "",
   "scripts": {
-    "prebuild": "mkdirp dist/css && mkdirp dist/js && mkdirp dist/img",
-    "build": "npm run make-css && npm run render-html && npm run img && npm run js",
+    "prebuild": "mkdirp dist/css && mkdirp dist/js && mkdirp dist/img && mkdirp dist/docs",
+    "build": "npm run make-css && npm run render-html && npm run img && npm run js && npm run docs",
     "postcss": "postcss src/css/main.css -o dist/css/styles.css",
     "render-html": "node render-html.js",
     "make-css": "npm run sass && npm run postcss && copyfiles -f node_modules/slick-carousel/slick/slick.css dist/css",
     "img": "copyfiles -f src/img/* dist/img",
-    "js": "copyfiles -f src/js/site.js dist/js && copyfiles -f node_modules/jquery/dist/jquery.min.js dist/js && copyfiles -f node_modules/slick-carousel/slick/slick.min.js dist/js",
+    "js": "copyfiles -f src/js/* dist/js && copyfiles -f node_modules/jquery/dist/jquery.min.js dist/js && copyfiles -f node_modules/slick-carousel/slick/slick.min.js dist/js",
+    "docs": "copyfiles -f src/docs/* dist/docs",
     "sass": "node-sass src/sass/main.scss -o src/css",
     "sasswatch": "node-sass --watch src/sass/main.scss -o dist/css"
   },

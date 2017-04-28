@@ -423,24 +423,35 @@ body.info-page {
             padding-right: 10px;
             padding-left: 10px;
         }        
+        .scrolling-doc {
+            height: 600px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            border: 1px solid $light-gray;            
+            font-size: 14px;
+        }
+        .download-pdf-link {
+            margin: 20px 0;
+            float: right;
+        }
     }
     .sign-up-btn {            
-    padding: 14px 40px;      
-    display: block;
-    text-align: center;
-    width: 100px;
-    margin: 60px auto;    
-    font-size: 22px;
-    font-weight: 400;
-    border: 2px solid $brand-green;
-    background-color: transparent;
-    transition: all 0.3s ease;
-    color: $brand-green;   
-    &:hover {
-        background-color: $brand-green;
-        color: $white;
-    }      
-}
+        padding: 14px 40px;      
+        display: block;
+        text-align: center;
+        width: 100px;
+        margin: 60px auto;    
+        font-size: 22px;
+        font-weight: 400;
+        border: 2px solid $brand-green;
+        background-color: transparent;
+        transition: all 0.3s ease;
+        color: $brand-green;   
+        &:hover {
+            background-color: $brand-green;
+            color: $white;
+        }      
+    }
 }
 
 @import 'media-sm';

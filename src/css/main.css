@@ -353,6 +353,15 @@ body.info-page {
     body.info-page .page-content p, body.info-page .page-content h1, body.info-page .page-content h2, body.info-page .page-content h3, body.info-page .page-content h4, body.info-page .page-content h5, body.info-page .page-content h6 {
       padding-right: 10px;
       padding-left: 10px; }
+    body.info-page .page-content .scrolling-doc {
+      height: 600px;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      border: 1px solid lightgray;
+      font-size: 14px; }
+    body.info-page .page-content .download-pdf-link {
+      margin: 20px 0;
+      float: right; }
   body.info-page .sign-up-btn {
     padding: 14px 40px;
     display: block;
