@@ -363,9 +363,10 @@ body.info-page {
       overflow-y: scroll;
       overflow-x: hidden;
       border: 1px solid lightgray;
-      font-size: 14px; }
+      font-size: 14px;
+      margin: 0 15px; }
     body.info-page .page-content .download-pdf-link {
-      margin: 20px 0;
+      margin: 20px 15px;
       float: right; }
   body.info-page .sign-up-btn {
     padding: 14px 40px;
