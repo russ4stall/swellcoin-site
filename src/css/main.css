@@ -302,12 +302,17 @@ body {
       list-style: none;
       margin: 10px 0; }
       .section-footer ul li a {
-        color: white;
         padding: 10px;
         text-decoration: none;
-        transition: all .2s ease; }
+        transition: all .2s ease;
+        color: white; }
         .section-footer ul li a:hover {
           color: rgba(255, 255, 255, 0.2); }
+    .section-footer ul.social {
+      display: inline-block; }
+      .section-footer ul.social li {
+        float: left;
+        padding: 0 10px; }
   .section-footer p {
     font-size: 12px;
     color: rgba(255, 255, 255, 0.5);
@@ -498,11 +503,11 @@ body.info-page {
     width: auto;
     padding: 15px 30px;
     margin-top: 15px; }
-  .section-footer ul li {
+  .section-footer ul.site li {
     font-size: 16px;
     display: inline-block;
     border-right: 1px solid; }
-    .section-footer ul li:last-child {
+    .section-footer ul.site li:last-child {
       border-right: none; }
   body.info-page {
     background-color: #fff; }
