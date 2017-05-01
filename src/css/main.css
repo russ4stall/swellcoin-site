@@ -163,9 +163,9 @@ body {
 
 .section-2 {
   background: #fff;
-  height: 300vw;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 92.83333%, 50% 100%, 0 92.83333%);
-  clip-path: polygon(0 0, 100% 0, 100% 92.83333%, 50% 100%, 0 92.83333%);
+  height: 330vw;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 93.48485%, 50% 100%, 0 93.48485%);
+  clip-path: polygon(0 0, 100% 0, 100% 93.48485%, 50% 100%, 0 93.48485%);
   z-index: 90;
   margin-top: -31.5vw; }
   .section-2 .section-title {
@@ -183,10 +183,10 @@ body {
       display: none; }
     .section-2 .content .hiw-icon {
       display: block;
-      margin: 24px auto;
+      margin: 8vw auto;
       width: 45%; }
     .section-2 .content .hiw-text {
-      font-size: 4.5vw;
+      font-size: 5.5vw;
       padding: 0 10px; }
 
 .section-3 {
