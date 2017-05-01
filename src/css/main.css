@@ -163,15 +163,31 @@ body {
 
 .section-2 {
   background: #fff;
-  height: 80vw;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 73.125%, 50% 100%, 0 73.125%);
-  clip-path: polygon(0 0, 100% 0, 100% 73.125%, 50% 100%, 0 73.125%);
+  height: 300vw;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 92.83333%, 50% 100%, 0 92.83333%);
+  clip-path: polygon(0 0, 100% 0, 100% 92.83333%, 50% 100%, 0 92.83333%);
   z-index: 90;
   margin-top: -31.5vw; }
   .section-2 .section-title {
     padding-top: 30.5vw; }
   .section-2 .content {
-    color: #1d1d1d; }
+    color: #1d1d1d;
+    text-align: center; }
+    .section-2 .content a {
+      color: #85c14f;
+      text-decoration: none;
+      transition: all 0.3s ease; }
+      .section-2 .content a:hover {
+        color: #537e2c; }
+    .section-2 .content .hiw-full {
+      display: none; }
+    .section-2 .content .hiw-icon {
+      display: block;
+      margin: 24px auto;
+      width: 45%; }
+    .section-2 .content .hiw-text {
+      font-size: 4.5vw;
+      padding: 0 10px; }
 
 .section-3 {
   background-image: -moz-linear-gradient(left, rgba(69, 155, 188, 0.9) 0%, rgba(69, 155, 188, 0.9) 100%), url("../img/bg2.jpg");
@@ -400,9 +416,13 @@ body.info-page {
     .section-1 .down-arrow-container {
       bottom: 35px; }
   .section-2 {
-    height: 75vw;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 71.33333%, 50% 100%, 0 71.33333%);
-    clip-path: polygon(0 0, 100% 0, 100% 71.33333%, 50% 100%, 0 71.33333%); }
+    height: 200vw;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 89.25%, 50% 100%, 0 89.25%);
+    clip-path: polygon(0 0, 100% 0, 100% 89.25%, 50% 100%, 0 89.25%); }
+    .section-2 .content .hiw-icon {
+      width: 30%; }
+    .section-2 .content .hiw-text {
+      font-size: 3vw; }
   .section-4 {
     height: 60vw; }
   .section-5 {
@@ -467,9 +487,33 @@ body.info-page {
         font-size: 20px;
         margin-bottom: 13vw; }
   .section-2 {
-    height: 70vw;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 69.28571%, 50% 100%, 0 69.28571%);
-    clip-path: polygon(0 0, 100% 0, 100% 69.28571%, 50% 100%, 0 69.28571%); }
+    height: 97vw;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 77.83505%, 50% 100%, 0 77.83505%);
+    clip-path: polygon(0 0, 100% 0, 100% 77.83505%, 50% 100%, 0 77.83505%); }
+    .section-2 .content {
+      max-width: none;
+      position: relative; }
+      .section-2 .content .hiw-icon {
+        display: none; }
+      .section-2 .content .hiw-full {
+        display: block;
+        margin: -170px auto 0 auto;
+        width: 100%; }
+      .section-2 .content .hiw-text {
+        float: left;
+        width: 20%;
+        font-size: 20px;
+        position: absolute;
+        padding: 0; }
+        .section-2 .content .hiw-text:nth-of-type(1) {
+          top: 60%;
+          left: 8%; }
+        .section-2 .content .hiw-text:nth-of-type(2) {
+          top: 82%;
+          left: 39.5%; }
+        .section-2 .content .hiw-text:nth-of-type(3) {
+          top: 60%;
+          left: 73%; }
   .section-3 .content {
     margin-bottom: 60px;
     display: flex; }
@@ -539,9 +583,11 @@ body.info-page {
       .section-1 .content p {
         margin-bottom: 9vw; }
   .section-2 {
-    height: 65vw;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 66.92308%, 50% 100%, 0 66.92308%);
-    clip-path: polygon(0 0, 100% 0, 100% 66.92308%, 50% 100%, 0 66.92308%); }
+    height: 90vw;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 76.11111%, 50% 100%, 0 76.11111%);
+    clip-path: polygon(0 0, 100% 0, 100% 76.11111%, 50% 100%, 0 76.11111%); }
+    .section-2 .content .hiw-full {
+      margin-top: -210px; }
   .section-3 .content .get-started {
     padding: 0 48px; }
   .section-4 {
@@ -566,9 +612,24 @@ body.info-page {
       .section-1 .content p {
         margin-bottom: 6vw; }
   .section-2 {
-    height: 55vw;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 60.90909%, 50% 100%, 0 60.90909%);
-    clip-path: polygon(0 0, 100% 0, 100% 60.90909%, 50% 100%, 0 60.90909%); }
+    height: 70vw;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 69.28571%, 50% 100%, 0 69.28571%);
+    clip-path: polygon(0 0, 100% 0, 100% 69.28571%, 50% 100%, 0 69.28571%); }
+    .section-2 .content .hiw-full {
+      margin-top: -265px;
+      width: 85%; }
+    .section-2 .content .hiw-text {
+      width: 20%;
+      font-size: 20px; }
+      .section-2 .content .hiw-text:nth-of-type(1) {
+        top: 60%;
+        left: 13%; }
+      .section-2 .content .hiw-text:nth-of-type(2) {
+        top: 82%;
+        left: 39.5%; }
+      .section-2 .content .hiw-text:nth-of-type(3) {
+        top: 60%;
+        left: 67.5%; }
   .section-3 .content .get-started {
     padding: 0 75px; }
   .section-4 {

@@ -20,6 +20,14 @@
     }
     .section-2 {
         @include chevronSectionDown($section-2-height-sm);
+        .content {       
+            .hiw-icon {
+                width: 30%;
+            }
+            .hiw-text {
+                font-size: 3vw;
+            }
+        }
     }
     .section-3 {
         
