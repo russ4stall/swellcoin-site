@@ -163,9 +163,9 @@ body {
 
 .section-2 {
   background: #fff;
-  height: 330vw;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 93.48485%, 50% 100%, 0 93.48485%);
-  clip-path: polygon(0 0, 100% 0, 100% 93.48485%, 50% 100%, 0 93.48485%);
+  height: 335vw;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 93.58209%, 50% 100%, 0 93.58209%);
+  clip-path: polygon(0 0, 100% 0, 100% 93.58209%, 50% 100%, 0 93.58209%);
   z-index: 90;
   margin-top: -31.5vw; }
   .section-2 .section-title {
@@ -416,9 +416,9 @@ body.info-page {
     .section-1 .down-arrow-container {
       bottom: 35px; }
   .section-2 {
-    height: 200vw;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 89.25%, 50% 100%, 0 89.25%);
-    clip-path: polygon(0 0, 100% 0, 100% 89.25%, 50% 100%, 0 89.25%); }
+    height: 225vw;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90.44444%, 50% 100%, 0 90.44444%);
+    clip-path: polygon(0 0, 100% 0, 100% 90.44444%, 50% 100%, 0 90.44444%); }
     .section-2 .content .hiw-icon {
       width: 30%; }
     .section-2 .content .hiw-text {
