@@ -2,11 +2,10 @@ var hbs = require('handlebars');
 var fs = require('fs');
 var titleCase = require('title-case');
 
-var htmlDir = __dirname + '/src/html';
-var outputDir = __dirname + '/dist';
-
-var layoutFilename = "layout.html";
-var homePageFilename = "_index.html";
+const htmlDir = __dirname + '/src/html';
+const outputDir = __dirname + '/dist';
+const layoutFilename = "layout.html";
+const homePageFilename = "_index.html";
 
 var layoutTemplate = fs.readFileSync(htmlDir + '/' + layoutFilename, 'utf8');
 var template = hbs.compile(layoutTemplate);
