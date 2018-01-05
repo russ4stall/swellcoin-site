@@ -1,0 +1,27 @@
+pipelines:
+  default:
+    - step:
+        name: Build
+        image: node:6.9.4
+        caches:
+          - node
+        script:
+          - npm install
+          - npm run build
+  branches:
+    master:
+      - step:
+          name: Build
+          image: node:6.9.4
+          caches:
+            - node
+          script:
+            - npm install
+            - npm run build
+          artifacts:
+            - dist/**
+      - step:
+          name: Deploy
+          script:
+            #- rsync -azvr dist/ deploy@$SITE_SERVER:/var/www/html
+            - echo "Way to go!"
