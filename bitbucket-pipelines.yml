@@ -23,5 +23,5 @@ pipelines:
       - step:
           name: Deploy
           script:
-            #- rsync -azvr dist/ deploy@$SITE_SERVER:/var/www/html
+            - rsync -azvr dist/ deploy@$SITE_SERVER:/var/www/html
             - echo "Way to go!"
