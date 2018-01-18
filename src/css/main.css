@@ -146,7 +146,7 @@ body {
     .section-1 .content .logo-title {
       width: 85vw; }
     .section-1 .content p {
-      font-size: 20px;
+      font-size: 24px;
       margin-bottom: 16vw; }
   .section-1 .down-arrow-container {
     position: absolute;
@@ -484,8 +484,8 @@ body.info-page {
       .section-1 .content .logo-title {
         width: 60vw; }
       .section-1 .content p {
-        font-size: 20px;
-        margin-bottom: 13vw; }
+        font-size: 28px;
+        margin-bottom: 11vw; }
   .section-2 {
     height: 97vw;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 77.83505%, 50% 100%, 0 77.83505%);
@@ -581,7 +581,8 @@ body.info-page {
       .section-1 .content .logo-title {
         width: 600px; }
       .section-1 .content p {
-        margin-bottom: 9vw; }
+        font-size: 30px;
+        margin-bottom: 6vw; }
   .section-2 {
     height: 90vw;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 76.11111%, 50% 100%, 0 76.11111%);
