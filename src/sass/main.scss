@@ -147,12 +147,13 @@ body {
         margin: 0;
         padding: 0;
         padding-top: 55px;
+        padding-bottom: 25px;
         display: none;        
         li {                      
             list-style-type: none;
             text-align: center;
-            text-transform: uppercase;
-            letter-spacing: 3px;       
+            //text-transform: uppercase;
+            //letter-spacing: 3px;       
             a {                
                 display: block;
                 padding: 15px;
